@@ -13,9 +13,10 @@
     @media (min-width: $lg) {
         padding: 70px 0  40px;
     }
-  @media (min-width: $full-hd) {
-    padding: 135px 0 63px;
-}
+
+    @media (min-width: $full-hd) {
+        padding: 135px 0 63px;
+    }
 
     .large-heading {
         color: #275B84;
@@ -39,15 +40,16 @@
             font-size: 4rem;
             line-height: 4.4rem;
         }
-            @media (min-width: $xl) {
-        font-size: 5.1rem;
-        line-height: 6rem;
-    }
 
-    @media (min-width: $full-hd) {
-        font-size: 6.5rem;
-        line-height: 7.4rem;
-    }
+        @media (min-width: $xl) {
+            font-size: 5.1rem;
+            line-height: 6rem;
+        }
+
+        @media (min-width: $full-hd) {
+            font-size: 6.5rem;
+            line-height: 7.4rem;
+        }
     }
 
     .entry-small-text {
@@ -71,11 +73,12 @@
             font-size: 2rem;
             line-height: 2.6rem;
         }
-          @media (min-width: $full-hd) {
-               font-size: 3rem;
+
+        @media (min-width: $full-hd) {
+            font-size: 3rem;
             line-height: 4rem;
             margin-top: 24px;
-          }
+        }
     }
 
     .arrow-link {
@@ -90,9 +93,10 @@
         @media (min-width: $lg) {
             margin-top: 40px;
         }
-         @media (min-width: $full-hd) {
+
+        @media (min-width: $full-hd) {
             margin-top: 61px;
-         }
+        }
 
         .icon {
             display: inline-block;
@@ -103,9 +107,10 @@
             @media (min-width: $lg) {
                 font-size: 3rem;
             }
-             @media (min-width: $full-hd) {
+
+            @media (min-width: $full-hd) {
                 font-size: 4rem;
-             }
+            }
         }
     }
 }
@@ -193,7 +198,8 @@
                 padding: 20px 30px 35px;
                 margin-bottom: 8px;
                 overflow: visible;
-                                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                     flex: 0 0 33% !important;
                     max-width: 33% !important;
                 }
@@ -209,10 +215,10 @@
                 height: 408px;
                 padding-top: 235px !important;
             }
- @media (min-width: $full-hd) {
-                      padding-top: 234px !important;
-                }
 
+            @media (min-width: $full-hd) {
+                padding-top: 234px !important;
+            }
 
             .sketch-line {
                 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -309,8 +315,9 @@
                     line-height: 2.6rem;
                     max-width: 450px;
                 }
-                 @media (min-width: $full-hd) {
-                   margin-top: 9px;
+
+                @media (min-width: $full-hd) {
+                    margin-top: 9px;
                 }
             }
 
@@ -358,9 +365,9 @@
                 max-width: 50%;
             }
 
-                @media (min-width: $full-hd) {
-                    padding-left: 90px;
-                }
+            @media (min-width: $full-hd) {
+                padding-left: 90px;
+            }
 
             .sketch-line {
                 background: #fff;
@@ -412,10 +419,11 @@
             @media (min-width: $xle-hd) {
                 clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%);
             }
-             @media (min-width: $full-hd) {
-                    padding-left: 60px;
-                    padding-right: 60px;
-                }
+
+            @media (min-width: $full-hd) {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
         }
 
         &__item:nth-child(3) {
@@ -426,9 +434,11 @@
                 max-width: 50%;
                 padding: 30px 30px 30px 22%;
             }
- @media (min-width: $full-hd) {
-                    padding-right: 90px;
-                }
+
+            @media (min-width: $full-hd) {
+                padding-right: 90px;
+            }
+
             .sketch-line {
                 background: #fff;
                 flex: 0 0 69%;
@@ -466,9 +476,11 @@
                 max-width: 50%;
                 padding: 30px 22% 30px 30px;
             }
- @media (min-width: $full-hd) {
-                    padding-left: 90px;
-                }
+
+            @media (min-width: $full-hd) {
+                padding-left: 90px;
+            }
+
             .sketch-line {
                 background: #fff;
                 flex: 0 0 69%;
@@ -514,10 +526,12 @@
                 top: auto;
                 padding: 30px 4% 30px 4%;
             }
- @media (min-width: $full-hd) {
-                    padding-left: 60px;
-                    padding-right: 60px;
-                }
+
+            @media (min-width: $full-hd) {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
             @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 position: relative;
                 bottom: 0;
@@ -537,9 +551,11 @@
                 max-width: 50%;
                 padding: 30px 30px 30px 22%;
             }
- @media (min-width: $full-hd) {
-                    padding-right: 90px;
-                }
+
+            @media (min-width: $full-hd) {
+                padding-right: 90px;
+            }
+
             .sketch-line {
                 background: #fff;
                 flex: 0 0 69%;
@@ -824,18 +840,45 @@
     @media (min-width: $lg) {
         padding: 32px 0 62px;
     }
- @media (min-width: $full-hd) {
-    padding: 91px 0 134px;
-}
+
+    @media (min-width: $full-hd) {
+        padding: 91px 0 134px;
+    }
 
     .section-default-header {
-         @media (min-width: $full-hd) {
+        @media (min-width: $full-hd) {
             margin-bottom: 95px;
-         }
+        }
     }
 
     &__item {
         margin-bottom: 19px;
+.counter-unit{
+  
+                display: inline-block;
+                .number{
+                    display: inline-block;
+                }
+            
+        .c-unit {
+            font-size: 5.4rem;
+            line-height: 7.7rem;
+            font-weight: 700;
+            color: #A0A0A0;
+            letter-spacing: $letter--50;
+            display: inline-block;
+
+            @media (min-width: $xl) {
+                font-size: 7.4rem;
+                line-height: 7.7rem;
+            }
+
+            @media (min-width: $full-hd) {
+                font-size: 8.6rem;
+            }
+
+        }
+    }
 
         .number {
             display: block;
@@ -844,14 +887,16 @@
             font-weight: 700;
             color: #A0A0A0;
             letter-spacing: $letter--50;
-               @media (min-width: $xl) {
-                 font-size: 7.4rem;
-            line-height: 7.7rem;
-               }
-                @media (min-width: $full-hd) {
-                     font-size: 8.6rem;
-            line-height: 12.3rem;
-                }
+
+            @media (min-width: $xl) {
+                font-size: 7.4rem;
+                line-height: 7.7rem;
+            }
+
+            @media (min-width: $full-hd) {
+                font-size: 8.6rem;
+                line-height: 12.3rem;
+            }
         }
 
         p {
@@ -860,15 +905,18 @@
             font-size: 1.2rem;
             line-height: 1.6rem;
             color: #393C3E;
- @media (min-width: $xl) {
-    font-size: 1.4rem;
-            line-height: 1.8rem;
- }
-   @media (min-width: $full-hd) {
-                     font-size: 2rem;
-            line-height: 3.3rem;
-            margin-top: 20px;
-                }
+
+            @media (min-width: $xl) {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+            }
+
+            @media (min-width: $full-hd) {
+                font-size: 2rem;
+                line-height: 3.3rem;
+                margin-top: 20px;
+            }
+
             br {
                 @media (max-width: $sm) {
                     display: none;
@@ -883,13 +931,15 @@
 
     @media (min-width: $lg) {
         padding: 39px 0 24px;
-    }   @media (min-width: $full-hd) {
-    padding: 127px 0 57px;
-}
+    }
 
-.section-default-header {
-      @media (min-width: $full-hd) {
-   margin-bottom: 87px;
-}
-}
+    @media (min-width: $full-hd) {
+        padding: 127px 0 57px;
+    }
+
+    .section-default-header {
+        @media (min-width: $full-hd) {
+            margin-bottom: 87px;
+        }
+    }
 }
