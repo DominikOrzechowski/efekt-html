@@ -1,0 +1,174 @@
+.section-slider-blog {
+	padding-bottom: 15px;
+     @media (min-width: $full-hd) {
+        padding-bottom: 42px;
+     }
+    .container.container-no-p {
+        @media (max-width: $sm) {
+            padding: 0;
+        }
+
+        .section-default-header {
+            @media (max-width: $sm) {
+                padding: 0 15px;
+            }
+             @media (min-width: $full-hd) {
+                margin-bottom: 67px;
+             }
+        }
+    }
+ .owl-carousel{
+         @media (min-width: $lg) {
+            opacity:1;
+            visibility: visible;
+         }
+    }
+    .sliderJS-blog {
+    	margin: 30px 0 0;
+        @media (max-width: $sm) {
+           // margin: 30px 0 0;
+
+        }
+              @media (min-width: $lg) {
+              	display: flex;
+              	margin:30px -15px 0;
+              }
+
+        .col-12 {
+        	padding: 0;
+        	      @media (min-width: $lg) {
+        	      	padding: 0px;
+        	      }
+           
+        }
+        .col-12:nth-child(1){
+            .section-slider-blog__item{
+                &__img{ @media (min-width: $lg) {
+ -webkit-clip-path: polygon(0 100%, 92% 100%, 100% 0, 0 0);
+clip-path: polygon(0 100%, 92% 100%, 100% 0, 0 0);}
+                }
+            }
+           
+        }
+        .col-12:nth-child(2){
+            .section-slider-blog__item{
+                &__img{ @media (min-width: $lg) {
+-webkit-clip-path: polygon(0 100%, 100% 100%, 92% 0, 8% 0);
+clip-path: polygon(0 100%, 100% 100%, 92% 0, 8% 0);}
+                }
+            }
+           
+        }
+                .col-12:nth-child(3){
+            .section-slider-blog__item{
+                &__img{ @media (min-width: $lg) {
+-webkit-clip-path: polygon(8% 100%, 100% 100%, 100% 0, 0 0);
+clip-path: polygon(8% 100%, 100% 100%, 100% 0, 0 0);
+}
+                }
+            }
+           
+        }
+        .owl-dots{
+        //	margin-top: -19px;
+          @media (min-width: $sm) {
+          	margin-top: 15px;
+          }
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: block;
+
+        &__img {
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 213px;
+            margin: 0 0 19px;
+            @media (min-width: $sm) {
+  height: 160px;
+            }
+              @media (min-width: $lg) {
+                height: 215px;
+              }
+               @media (min-width: $full-hd) {
+                height: 332px;
+                margin-bottom: 45px;
+               }
+        }
+
+        &__content {
+            @media (max-width: $sm) {
+                padding: 0 15px;
+            }
+
+            time {
+                display: block;
+                font-size: 1.1rem;
+                font-weight: 400;
+                color: #414141;
+                line-height: 2.1rem;
+                 @media (min-width: $lg) {
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                }
+
+                @media (min-width: $xle-hd) {
+                    font-size: 2rem;
+                    line-height: 2.9rem;
+                }
+            }
+
+            &__title {
+                display: block;
+                margin: 0 0 13px;
+                font-size: 1.6rem;
+                letter-spacing: $letter-20;
+                color: #414141;
+                line-height: 2.1rem;
+                font-family: $font-primary;
+                font-weight: 400;
+ @media (min-width: $lg) {
+                    font-size: 1.7rem;
+                    line-height: 2.1rem;
+                    height:64px;
+                    overflow:hidden;
+                    padding: 0 15px 0 0px;
+                }
+                @media (min-width: $xl) {
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    height: 73px;
+                }
+
+              /*   @media (min-width: $full-hd) {
+                  font-size: 2.7rem;
+                  line-height: 3.2rem;
+              } */
+                  @media (min-width: $full-hd) {
+                    margin-top: 9px;
+                     font-size: 2.7rem;
+                    line-height: 3.2rem;
+                    height: 98px;
+                  }
+            }
+
+            .text-link {
+                margin-top: 0px;
+                @media (min-width: $full-hd) {
+                    margin-top: 56px;
+                  }
+            }
+        }
+
+        &:hover,
+        &:focus {
+            .text-link,
+            .section-slider-blog__item__content__title {
+                color: $native-hover;
+            }
+        }
+    }
+}

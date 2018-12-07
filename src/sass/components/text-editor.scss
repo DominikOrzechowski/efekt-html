@@ -1,0 +1,42 @@
+.text-editor{
+	ul{
+		list-style:none;
+		padding: 0;
+		margin:0;
+		li{
+			position:relative;
+			padding-left: 25px;
+			 @media (min-width: $md) {
+
+			 }
+			 @media (min-width: $xle-hd) {
+			 	padding-left: 30px;
+			 }
+		}
+		li:before{
+			content:"";
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #9F9F9F;
+			display: inline-block;
+			position:absolute;
+			left:0;
+			top:8px;
+			 @media (min-width: $md) {
+			 			width: 7px;
+			height: 7px;	
+			top:10px;
+			 }
+			  @media (min-width: $lg) {
+			 				
+			top:11px;
+			 }
+			 @media (min-width: $xle-hd) {
+			 			width: 10px;
+			height: 10px;	
+			top:10px;
+			 }
+		}
+	}
+}
