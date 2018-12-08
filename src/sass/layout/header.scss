@@ -2,11 +2,14 @@
     border-bottom: 1px solid #D5D5D5;
     background: #fff;
 
+
     .container {
         height: 47px;
         position: relative;
         display: flex;
         align-items: center;
+        transition:150ms all ease-in-out;
+
 
         @media (min-width: $lg) {
             height: 70px;
@@ -212,15 +215,38 @@
                     letter-spacing: $letter-30;
                     text-transform: uppercase;
                     line-height: 3rem;
+                    position: relative;
 
                     @media (min-width: $lg) {
                         line-height: 1.1rem;
+                        display: flex;
+                        align-items: center;
+                        height: 79px;
                     }
+                     @media (min-width: $full-hd) {
+            height: 91px;
+        }
 
                     &:hover,
                     &:focus {
                         color: $native-hover;
                     }
+                }
+            }
+            li:hover{
+                a:after{
+                    content:"";
+                    width: 100%;
+                    top:0;
+                    height: 3px;
+                    background: #FFFFFF;
+                    position: absolute;
+                    left:0;
+                    right: 0;
+                    display: none;
+                     @media (min-width: $lg) {
+                        display: block;
+                     }
                 }
             }
 
@@ -290,7 +316,7 @@
 
         @media (min-width: $full-hd) {
             height: 91px;
-            margin-top: 3px;
+         //   margin-top: 3px;
         }
 
         &:hover,
@@ -311,7 +337,19 @@
     .logo--native {
         display: none;
     }
-
+.header-main__socials{
+    a{
+        .icon{
+            color:#BED8ED;
+        }
+          &:hover,
+        &:focus {
+            .icon {
+                color: #fff;
+            }
+        }
+    }
+}
     .header-main__btn-nav {
         border-left: 1px solid #3E6E93;
 
@@ -322,7 +360,7 @@
         &:hover,
         &:focus {
             .icon {
-                color: #222;
+                color: #BED8ED;
             }
         }
     }
@@ -337,13 +375,16 @@
 
                     &:hover,
                     &:focus {
-                        color: #222;
+                        color:#BED8ED;
                     }
                 }
             }
 
             .lang-link {
                 border-top: 1px solid #3E6E93;
+                  @media (min-width: $lg) {
+                    border-top:0;
+                  }
             }
         }
     }
@@ -356,6 +397,11 @@
         }
 
         //    border-left:1px solid #3E6E93;
-   
+    &:hover,
+        &:focus {
+            
+                color: #BED8ED;
+            
+        }
     }
 }

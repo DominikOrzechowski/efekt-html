@@ -1,3 +1,22 @@
+
+/* Header scroll */
+
+$(window).scroll(function() {
+    if ($(".fixed-top").offset().top > 100) {
+        $(".fixed-top").addClass("top-nav-collapse");
+        $("body").addClass("clear-padding");
+     
+        
+       
+    } else {
+        $(".fixed-top").removeClass("top-nav-collapse");
+         $("body").removeClass("clear-padding");
+        
+     
+    }
+});
+
+
 /* nav mobile */
 
 $('.header-main__btn-nav.nav-open').click(function() {

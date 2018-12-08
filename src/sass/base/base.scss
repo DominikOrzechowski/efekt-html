@@ -12,7 +12,7 @@ body {
     color: $native-color;
     padding-top: 48px;
     overflow-x:hidden;
-
+transition:150ms padding ease-in-out;
     @media (min-width: $md) {
         font-size: 1.6rem;
         line-height: 2.6rem;
