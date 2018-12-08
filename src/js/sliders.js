@@ -195,7 +195,51 @@ $(".sliderLogo").owlCarousel({
    
     
   });
+$(".sliderReference").owlCarousel({
+ 
+ 
+    items:1,
+    singleItem:true,
+    stagePadding:0,
+    smartSpeed:450,
+    //center:true,
+    loop:false,
+    margin:0,
+    
+   
+  nav:false,
+             navText: [
+           "<span class='icon icon-back'></span>",
+          "<span class='icon icon-next'></span>"
+          ],
+   
 
+    autoplay:false,
+       
+       dots:true,
+       pagination:true,
+          responsiveClass:true,
+          responsive : {
+    // breakpoint from 0 up
+ 
+    
+     450 : {
+       items:2,
+    },
+      520 : {
+       items:2,
+    },
+      767 : {
+       items:3,
+    },
+     1300 : {
+       nav:true,
+       items:3,
+    },
+}
+   
+    
+  });
 $(".sliderJS-product").owlCarousel({
  
  

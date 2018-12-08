@@ -114,7 +114,38 @@
         }
     }
 }
+    .arrow-link {
+        display: flex;
+        justify-content: center;
+        margin-top: 13px;
 
+        @media (min-width: $sm) {
+            margin-top: 30px;
+        }
+
+        @media (min-width: $lg) {
+            margin-top: 40px;
+        }
+
+        @media (min-width: $full-hd) {
+            margin-top: 61px;
+        }
+
+        .icon {
+            display: inline-block;
+            transform: rotate(90deg);
+            font-size: 2rem;
+            color: #BFBFBF;
+
+            @media (min-width: $lg) {
+                font-size: 3rem;
+            }
+
+            @media (min-width: $full-hd) {
+                font-size: 4rem;
+            }
+        }
+    }
 .section-entry-offer {
     max-width: 1930px;
     margin: 0 auto;
