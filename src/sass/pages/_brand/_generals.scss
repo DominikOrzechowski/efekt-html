@@ -7,11 +7,15 @@
  }
 
 	.entry-heading{
+		
+	}
+	.section-entry-main__header{
 		margin-bottom: 29px;
 		@media (min-width: $sm) {
 			margin-bottom: 0;
 		}
 	}
+
 }
 .section-default.section-entry-main.large-padding{
 		padding-bottom: 111px;
