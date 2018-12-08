@@ -4,8 +4,18 @@
  @media (min-width: $sm) {
  	padding-top: 55px;
  	padding-bottom: 55px;
- }
-
+ 	    @media (min-width: $md) {
+    	padding-top: 108px;
+    	padding-bottom: 50px;
+    }
+    	    @media (min-width: $xle) {
+    padding-top: 108px;
+    padding-bottom: 50px;
+    }
+ }@media (min-width: $full-hd) {
+padding-top: 186px;
+    padding-bottom: 118px;
+}
 	.entry-heading{
 		
 	}
