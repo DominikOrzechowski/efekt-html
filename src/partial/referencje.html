@@ -15,14 +15,14 @@
                 <section class="section-default section-entry-main section-entry-main--reference">
                     <div class="container"> 
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-md-5">
+                            <div class="col-12 col-sm-6 col-md-6">
                                 <header class="section-entry-main__header">
                                     <h1 class="entry-heading">Referencje</h1>
                                     <p class="text-section">Najważniejszym celem naszej firmy jest zadowolenie klienta. Dlatego też, ogromnie cieszymy się czytając wszystkie pozytywne opinie na temat oferowanych przez nas usług. Do tej pory zdobyliśmy rzeszę stałych klientów, którzy regularnie dokonują zakupów mebli do biura oraz przedszkoli.</p>
                                     <p class="text-section">Liczne referencje potwierdzają wysoką jakość prezentowanych w naszym sklepie foteli gabinetowych, komód czy kontenerów. Co więcej, większość opinii utwierdza w przekonaniu, iż współpraca z Efekt Style była niezwykle korzystną inwestycją.</p>
                                 </header>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-5 offset-md-2">
+                            <div class="col-12 col-sm-6 col-md-5 offset-md-1 pr-lg-0">
                                 <div class="section-text-col offset-col-top">
                                     <p class="small-block-heading">Jeżeli zastanawiają się Państwo nad zakupem mebli do biura w naszym sklepie internetowym zapraszamy do przeczytania referencji dotychczasowych klientów.</p>
                                 </div>
@@ -41,36 +41,36 @@
                             <a href="ofirmie.html" class="text-link text-link-icon--right">Zobacz wszystkie <span class="icon icon-next"></span></a>
                         </header>
                         <nav class="tab-nav">
-                            <ul class="tab-nav__item tabNavSlider">
-                                <li data-content-class="content-all" class="active">Wszystkie</li>
-                                <li data-content-id="content-1">PRZEDSIĘBIORSTWA</li>
-                                <li data-content-id="content-2">SADY</li>
-                                <li data-content-id="content-2">URZĘDY</li>
+                            <ul class="tab-nav__item tabNavSlider" id="tabNav">
+                                <li id="all" class="active">Wszystkie</li>
+                                <li id="cat1">PRZEDSIĘBIORSTWA</li>
+                                <li id="cat2">SADY</li>
+                                <li id="cat3">URZĘDY</li>
                             </ul>
                         </nav>
-                        <div class="section-slider-reference__content owl-carousel sliderReference">
-                            <div class="item">
+                        <div class="section-slider-reference__content sliderCarousel owl-carousel sliderReference" id="sliderCarousel">
+                            <div class="item cat1 all">
                                 <a href="#" class="section-slider-reference__content__item">
                                     <time>2017</time>
                                     <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
                                     <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
                                 </a>
                             </div>
-                            <div class="item">
+                            <div class="item cat2 all">
                                 <a href="#" class="section-slider-reference__content__item">
                                     <time>2017</time>
                                     <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
                                     <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
                                 </a>
                             </div>
-                            <div class="item">
+                            <div class="item cat3 all">
                                 <a href="#" class="section-slider-reference__content__item">
                                     <time>2017</time>
                                     <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
                                     <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
                                 </a>
                             </div>
-                            <div class="item">
+                            <div class="item cat3 all">
                                 <a href="#" class="section-slider-reference__content__item">
                                     <time>2017</time>
                                     <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
@@ -78,6 +78,7 @@
                                 </a>
                             </div>
                         </div>
+                        <div id="projects-hidden" class="hide"></div>
                     </div>
                 </section>
                 <!-- section seperator -->

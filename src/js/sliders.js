@@ -195,7 +195,7 @@ $(".sliderLogo").owlCarousel({
    
     
   });
-$(".sliderReference").owlCarousel({
+/*$(".sliderReference").owlCarousel({
  
  
     items:1,
@@ -239,7 +239,7 @@ $(".sliderReference").owlCarousel({
 }
    
     
-  });
+  });*/
 $(".sliderJS-product").owlCarousel({
  
  
@@ -330,3 +330,130 @@ $(".sliderJS-inspiration").owlCarousel({
    
     
   });
+
+
+function showProjectsbyCat( cat ){
+  if ( cat == 'all'){
+    $('#projects-hidden .item').each(function(){
+       var owl   = $(".owl-carousel");
+       elem      = $(this).parent().html();
+
+     
+       owl.owlCarousel('add', elem).owlCarousel('update');
+       $(this).parent().remove();
+    });
+  }else{
+    $('#projects-hidden .item.'+ cat).each(function(){
+       var owl   = $(".owl-carousel");
+       elem      = $(this).parent().html();
+
+      owl.owlCarousel('add', elem).owlCarousel('update');
+       $(this).parent().remove();
+    });
+
+    $('.sliderCarousel .item:not(.item.'+ cat + ')').each(function(){
+       var owl   = $(".owl-carousel");
+       targetPos = $(this).parent().index();
+       elem      = $(this).parent();
+
+       $( elem ).clone().appendTo( $('#projects-hidden') );
+       owl.owlCarousel('remove', targetPos).owlCarousel('update');;
+    });
+  }
+}
+
+$(window).load(function(){
+  
+    //Click event for filters
+    $('#tabNav li').click(function(e){
+        e.preventDefault();
+        $('#tabNav li').removeClass('active');
+
+        cat = $(this).attr('ID');
+        $(this).addClass('active');
+        showProjectsbyCat( cat );
+        //alert('filtering'+ cat);
+    });
+  
+   //Initialize owl carousel
+    $("#sliderCarousel").owlCarousel({
+ 
+    items:1,
+    singleItem:true,
+    stagePadding:0,
+    smartSpeed:450,
+    //center:true,
+    loop:false,
+    margin:0,
+    
+   
+  nav:false,
+             navText: [
+           "<span class='icon icon-back'></span>",
+          "<span class='icon icon-next'></span>"
+          ],
+   
+
+    autoplay:false,
+       
+       dots:true,
+       pagination:true,
+          responsiveClass:true,
+          responsive : {
+    // breakpoint from 0 up
+ 
+    
+     450 : {
+       items:2,
+    },
+      520 : {
+       items:2,
+    },
+      767 : {
+       items:3,
+    },
+     1300 : {
+       nav:true,
+       items:3,
+    },
+}
+    })
+      $("#sliderCarouselRealization").owlCarousel({
+ 
+    items:1,
+    singleItem:true,
+    stagePadding:0,
+    smartSpeed:450,
+    //center:true,
+    loop:false,
+    margin:0,
+    
+   
+  nav:false,
+             navText: [
+           "<span class='icon icon-back'></span>",
+          "<span class='icon icon-next'></span>"
+          ],
+   
+
+    autoplay:false,
+       
+       dots:true,
+       pagination:true,
+          responsiveClass:true,
+          responsive : {
+    // breakpoint from 0 up
+ 
+    
+     450 : {
+       items:2,
+    },
+    
+     1300 : {
+       nav:true,
+       items:2,
+    },
+}
+    }
+  );
+});

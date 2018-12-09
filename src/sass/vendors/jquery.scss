@@ -64,62 +64,69 @@
     position: absolute;
     bottom: 0px;
 }
-    .owl-dots {
-	display: flex;
-	justify-content: center;
-	
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
     width: 100%;
+
     .owl-dot {
-    	display: inline-block;
+        display: inline-block;
+
         span {
-            height:6px;
+            height: 6px;
             width: 6px;
             display: inline-block;
             border-radius: 50%;
             background: #C4C4C4;
-            border:0;
+            border: 0;
             margin-right: 7px;
-
         }
     }
 
     .owl-dot.active {
-    	position:relative;
-    	top:0.2rem;
-      @media (min-width: $full-hd) {   top:0.3rem;}
+        position: relative;
+        top: 0.2rem;
+
+        @media (min-width: $full-hd) {
+            top: 0.3rem;
+        }
+
         span {
             background: #275B84;
             width: 10px;
             height: 10px;
-           
-               @media (min-width: $full-hd) {
-                 width: 13px;
-            height: 13px;
 
-
-               }
+            @media (min-width: $full-hd) {
+                width: 13px;
+                height: 13px;
+            }
         }
     }
 }
 
-.owl-nav{
+.owl-nav {
     position: absolute;
-    left:0;
+    left: 0;
     right: 0;
-
     display: flex;
+
     @include vertical-center;
+
     margin-top: -20px;
- @media (min-width: 1300px) {
-    left:-28px;
-    right: -28px;
- }
- @media (min-width: 1430px) {
-    left:-68px;
-    right: -68px;
- }
+
+    @media (min-width: 1300px) {
+        left: -28px;
+        right: -28px;
+    }
+
+    @media (min-width: 1430px) {
+        left: -68px;
+        right: -68px;
+    }
+
     .owl-next,
-    .owl-prev{
+    .owl-prev {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -127,48 +134,53 @@
         width: 43px;
         height: 47px;
         position: absolute;
-         @media (min-width: $full-hd) {
-               width: 53px;
-        height: 57px;
-         }
-        .icon{
-            color:#fff;
-            position: relative;
-            top:2px;
+
+        @media (min-width: $full-hd) {
+            width: 53px;
+            height: 57px;
         }
+
+        .icon {
+            color: #fff;
+            position: relative;
+            top: 2px;
+        }
+
         &:hover,
-        &:focus{
-             background:$native-hover-blue; 
+        &:focus {
+            background: $native-hover-blue;
         }
     }
+
     .owl-next.disabled,
-    .owl-prev.disabled{
+    .owl-prev.disabled {
         display: none;
     }
-    .owl-prev{
+
+    .owl-prev {
         left: 0;
     }
-    .owl-next{
-        right:0;
+
+    .owl-next {
+        right: 0;
     }
 }
-.owl-carousel{
-  
-       opacity:0;
+
+.owl-carousel {
+    opacity: 0;
     visibility: hidden;
-   // height: 50px;
+
+    // height: 50px;
     position: relative;
- 
-}
-.owl-carousel.owl-loaded {
- 
-  
-      opacity:1;
-    visibility: visible;
-   // height: auto;
-   
 }
 
-.owl-carousel.owl-loaded:after{
+.owl-carousel.owl-loaded {
+    opacity: 1;
+    visibility: visible;
+
+    // height: auto;
+}
+
+.owl-carousel.owl-loaded:after {
     display: none;
 }

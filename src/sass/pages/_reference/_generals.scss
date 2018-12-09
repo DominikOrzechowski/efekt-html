@@ -120,41 +120,6 @@ font-size: 2.4rem;
 
     }
 
-    .tab-nav{
-    	display: block;
-    	&__item{
-    		list-style: none;
-    		padding: 0;
-    		margin:0;
-    		li{
-    			display: block;
-    			margin-bottom: 7px;
-    			font-size: 1.1rem;
-    			font-weight: 700;
-    			color:#393C3E;
-    			letter-spacing: $letter-30;
-    			line-height: 1.4rem;
-    			text-transform: uppercase;
-    			cursor:pointer;
-    				@media (min-width: $xs) {
-    					margin-bottom: 0;
-    					display: inline-block;
-    					margin-right: 15px;
-    				}
-    			@media (min-width: $lg) {
-    				margin-right: 49px;
-    			}
-    			&:hover,
-    			&:focus{
-    					color:#969696;
-    			}
-    		}
-    		li.active{
-    			color:#969696;
-    		}
-    	}
-    }
-
 
 
     .owl-stage {
@@ -183,3 +148,39 @@ font-size: 2.4rem;
         }
     }
 }
+
+
+    .tab-nav{
+        display: block;
+        &__item{
+            list-style: none;
+            padding: 0;
+            margin:0;
+            li{
+                display: block;
+                margin-bottom: 7px;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color:#393C3E;
+                letter-spacing: $letter-30;
+                line-height: 1.4rem;
+                text-transform: uppercase;
+                cursor:pointer;
+                    @media (min-width: $xs) {
+                        margin-bottom: 0;
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+                @media (min-width: $lg) {
+                    margin-right: 49px;
+                }
+                &:hover,
+                &:focus{
+                        color:#969696;
+                }
+            }
+            li.active{
+                color:#969696;
+            }
+        }
+    }

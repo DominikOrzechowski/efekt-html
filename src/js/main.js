@@ -111,17 +111,19 @@ $('.tab-nav__item li').click(function(){
   
    $('#' + $(this).attr('data-content-id')).siblings().removeClass('d-block');
   $('#' + $(this).attr('data-content-id')).addClass('d-block');
+
     $('#' + $(this).attr('data-content-id')).removeClass('all-content');
    $('.' + $(this).attr('data-content-class')).siblings().removeClass('d-block all-content');
   $('.' + $(this).attr('data-content-class')).addClass('d-block');
-
+ $('.content-tab').removeClass('all-content');
 $('.showAll').removeClass('d-block');
-    $(this).parent().find('li').addClass('active');
- $(this).parent().siblings().find('li').removeClass('active');
 
+$(this).parent().find('li').addClass('active');
+ $(this).siblings().removeClass('active');
+  
 });
 
-$('.reviews__tab__item li[data-content-class="content-all"]').click(function(){
+$('.tab-nav__item li[data-content-class="content-all"]').click(function(){
 
  $('.content-tab').addClass('all-content');
   
@@ -132,3 +134,24 @@ $('.showAll').addClass('d-block');
 
 });
 /**/
+
+
+
+
+  $(".gallery  a").jqPhotoSwipe({
+    forceSingleGallery: true,
+    closeEl:true,
+captionEl: true,
+fullscreenEl: false,
+zoomEl: false,
+shareEl: false,
+
+arrowEl: true,
+preloaderEl: false,
+  });
+
+function firstItemAnimation() {
+  $("#offer-section").removeClass("opacity-0");
+  
+}
+setTimeout(firstItemAnimation, 500);
