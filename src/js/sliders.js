@@ -361,7 +361,10 @@ function showProjectsbyCat( cat ){
     });
   }
 }
+function refreshItem(){
 
+ $owl.trigger('refresh.owl.carousel');
+}
 $(window).load(function(){
   
     //Click event for filters
@@ -373,6 +376,8 @@ $(window).load(function(){
         $(this).addClass('active');
         showProjectsbyCat( cat );
         //alert('filtering'+ cat);
+        var $owl = $("#sliderCarouselRealization");
+       $owl.trigger('refresh.owl.carousel');
     });
   
    //Initialize owl carousel
@@ -418,7 +423,7 @@ $(window).load(function(){
     },
 }
     })
-      $("#sliderCarouselRealization").owlCarousel({
+  const owl = $("#sliderCarouselRealization").owlCarousel({
  
     items:1,
     singleItem:true,

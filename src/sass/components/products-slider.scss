@@ -1,5 +1,8 @@
 .section-default.section-slider-product{
 	padding-bottom: 10px;
+		 @media (min-width: $lg) {
+			  		padding: 100px 0 87px;
+			  }
  @media (min-width: $full-hd) {
 	padding: 100px 0 87px;
 }

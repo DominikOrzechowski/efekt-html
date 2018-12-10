@@ -230,7 +230,10 @@
     //    padding: 61px 0px 58px;
      padding: 40px 0px 58px;
     }
-
+       @media (min-width: $lg) {
+ padding: 127px 0px 113px;
+    // padding: 40px 0px 58px;
+    }
     @media (min-width: $full-hd) {
         margin-top: 12px;
 

@@ -1,3 +1,35 @@
+.section-default.section-entry-main--ergonomics{
+     @media (min-width: $full-hd) {
+           padding-bottom: 200px;
+        }
+       
+             .offset-col-top {
+        @media (min-width: $sm) {
+            margin-top: 53px;
+        }
+
+        @media (min-width: $md) {
+            margin-top: 63px;
+        }
+
+        @media (min-width: $lg) {
+            margin-top: 70px;
+        }
+         @media (min-width: $xl) {
+            margin-top: 80px;
+        }
+        
+            @media (min-width: $full-hd) {
+         margin-top: 117px;
+        }
+
+       
+    
+         
+        }
+}
+
+
 .section-default.section-img-skew.section-img-skew--offset {
     height: 207px;
 
@@ -84,3 +116,4 @@ padding: 150px 0 185px;
 		}
 	}
 }
+
