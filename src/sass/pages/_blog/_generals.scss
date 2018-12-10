@@ -22,7 +22,7 @@
     }
 
     .owl-carousel {
-        @media (min-width: $lg) {
+        @media (min-width: $md) {
             opacity: 1;
             visibility: visible;
         }
@@ -35,9 +35,9 @@
             // margin: 30px 0 0;
         }
 
-        @media (min-width: $lg) {
+        @media (min-width: $md) {
             display: flex;
-            margin: 30px -15px 0;
+            margin: 30px 0px 0;
         }
 
         .col-12 {
@@ -51,7 +51,7 @@
         .col-12:nth-child(1) {
             .section-slider-blog__item {
                 &__img {
-                    @media (min-width: $lg) {
+                    @media (min-width: $md) {
                         -webkit-clip-path: polygon(0 100%, 92% 100%, 100% 0, 0 0);
                         clip-path: polygon(0 100%, 92% 100%, 100% 0, 0 0);
                     }
@@ -62,7 +62,7 @@
         .col-12:nth-child(2) {
             .section-slider-blog__item {
                 &__img {
-                    @media (min-width: $lg) {
+                    @media (min-width: $md) {
                         -webkit-clip-path: polygon(0 100%, 100% 100%, 92% 0, 8% 0);
                         clip-path: polygon(0 100%, 100% 100%, 92% 0, 8% 0);
                     }
@@ -73,10 +73,16 @@
         .col-12:nth-child(3) {
             .section-slider-blog__item {
                 &__img {
-                    @media (min-width: $lg) {
+                    @media (min-width: $md) {
                         -webkit-clip-path: polygon(8% 100%, 100% 100%, 100% 0, 0 0);
                         clip-path: polygon(8% 100%, 100% 100%, 100% 0, 0 0);
                     }
+                }
+                &__content{
+                                  @media (min-width: $md) {
+padding-left: 7%;
+//padding-right: 7%;
+}
                 }
             }
         }
@@ -107,8 +113,11 @@
             @media (min-width: $lg) {
                 height: 215px;
             }
+  @media (min-width: $xle-more) {
+                height: 280px;
+            }
 
-            @media (min-width: $full-hd) {
+            @media (min-width: $xle-hd) {
                 height: 332px;
                 margin-bottom: 45px;
             }
@@ -118,6 +127,10 @@
             @media (max-width: $sm) {
                 padding: 0 15px;
             }
+            @media (min-width: $md) {
+            padding-right: 7%;
+        }
+
 
             time {
                 display: block;
@@ -146,7 +159,10 @@
                 line-height: 2.1rem;
                 font-family: $font-primary;
                 font-weight: 400;
-
+   @media (min-width: $md) {
+    height: 64px;
+    overflow: hidden;
+   }
                 @media (min-width: $lg) {
                     font-size: 1.7rem;
                     line-height: 2.1rem;
@@ -177,7 +193,7 @@
                 margin-top: 0px;
 
                 @media (min-width: $full-hd) {
-                    margin-top: 56px;
+                    margin-top: 22px;
                 }
             }
         }

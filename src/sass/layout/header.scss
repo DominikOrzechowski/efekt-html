@@ -23,7 +23,7 @@
     &__logo {
         width: 90px;
         display: inline-block;
-
+ transition:none;
         @media (min-width: $lg) {
             width: 130px;
         }

@@ -121,14 +121,14 @@
 
                 }
             };
-        if ($(window).width() < 992) {
+        if ($(window).width() < 767) {
             var owlActive = owl.owlCarousel(owlOptions);
         } else {
             owl.addClass('off');
         }
 
         $(window).resize(function() {
-            if ($(window).width() < 992) {
+            if ($(window).width() < 767) {
                 if ($('.owl-carousel.sliderJS-blog').hasClass('off')) {
                     var owlActive = owl.owlCarousel(owlOptions);
                     owl.removeClass('off');
@@ -423,7 +423,7 @@ $(window).load(function(){
     },
 }
     })
-  const owl = $("#sliderCarouselRealization").owlCarousel({
+  const owl = $(".sliderRealization").owlCarousel({
  
     items:1,
     singleItem:true,

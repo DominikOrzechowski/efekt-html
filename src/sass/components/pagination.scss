@@ -1,7 +1,7 @@
 .pagination {
     display: block;
     text-align: center;
-    margin: 15px auto 15px;
+    margin: 15px auto 0px;
 
     //  max-width: 322px;
     @media (min-width: $lg) {
@@ -10,9 +10,10 @@
     }
 
     @media (min-width: $xl) {
-        margin: 25px auto 25px;
-    }
-
+        margin: 25px auto 12px;
+    }  @media (min-width: $xle-hd) {
+margin:78px auto 61px;
+}
     &__list {
         display: inline-flex;
         margin: 0 auto;
@@ -47,7 +48,7 @@
                 display: inline-block;
                 width: 25px;
                 height: 32px;
-                line-height: 32px;
+                line-height: 29px;
                 color: #233340;
                 text-align: center;
                 letter-spacing: $letter--30;
@@ -185,6 +186,9 @@
 
         .text-dots {
             padding: 3px 10px;
+             @media (min-width: $xle-hd) {
+                line-height: 7rem;
+             }
         }
 
         .current {
@@ -195,6 +199,7 @@
             display: inline-block;
             font-size: 1.4rem;
             font-weight: 400;
+            position: relative;
 
             // background: #df3a1a;
             @media (min-width: $lg) {
@@ -209,6 +214,7 @@
                 font-size: 1.4rem;
                 font-weight: 400;
                 position: relative;
+                border:1px solid #C9C9C9;
 
                 //   left:0.04rem;
                 color: $native-hover;
@@ -216,7 +222,7 @@
                 // top:0px;
                 width: 25px;
                 height: 32px;
-                line-height: 32px;
+                line-height: 29px;
 
                 @media (min-width: $lg) {
                     font-size: 1.6rem;
@@ -232,5 +238,6 @@
             }
             }
         }
+
     }
 }

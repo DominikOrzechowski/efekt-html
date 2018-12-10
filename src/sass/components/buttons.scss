@@ -10,7 +10,7 @@ button {
 .btn-main {
     background: $native-btn-bg;
     color: $native-btn-color;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     display: inline-flex;
     align-items: center;
@@ -28,8 +28,10 @@ button {
     width: auto;
     min-width: 180px;
     transition: all 200ms ease-in-out;
-
-    @media (min-width: $lg) {
+  @media (min-width: $md) {
+    font-size: 1.3rem;
+  }
+    @media (min-width: $xl) {
         height: 57px;
         font-size: 1.4rem;
         line-height: 1.2rem;

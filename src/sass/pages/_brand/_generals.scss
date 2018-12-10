@@ -24,7 +24,7 @@
 
     .entry-heading {}
 .offset-md-1 {
-   @media (min-width: $md) { margin-left: 6.333333%;}
+   @media (min-width: $xl) { margin-left: 6.333333%;}
 }
     .section-entry-main__header {
         margin-bottom: 29px;
@@ -243,8 +243,8 @@
     }
 
     .section-col-with-txt__content {
-        margin-bottom: 45px;
-
+        //margin-bottom: 45px;
+margin-bottom: 32px;
         @media (min-width: $sm) {
             margin-bottom: 0;
         }

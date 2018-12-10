@@ -56,13 +56,13 @@
     }
 }
 .txt-link{
-    a:first-of-type{
-        margin-right: 20px;
+    a:nth-child(2){
+        margin-left: 20px;
     }
 }
 .section-default.section-col-with-txt {
     .col-md-5.col-sm-6 {
-        @media (min-width: $lg) {
+        @media (min-width: $xl) {
             flex: 0 0 44.666667%;
             max-width: 44.666667%;
             padding-right: 0;
@@ -70,7 +70,7 @@
     }
 
     .col-md-5.offset-md-2 {
-        @media (min-width: $lg) {
+        @media (min-width: $xl) {
             flex: 0 0 45.3%;
             max-width: 45.3%;
             margin-left: 10%;
