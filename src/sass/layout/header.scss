@@ -189,10 +189,13 @@
             }
 
             @media (min-width: 720px) {
+                max-width: 510px;
+                margin: 0 auto;
+            }
+ @media (min-width: 767px) {
                 max-width: 690px;
                 margin: 0 auto;
             }
-
             @media (min-width: $lg) {
                 max-width: 100%;
             }
