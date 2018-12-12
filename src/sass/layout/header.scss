@@ -236,13 +236,32 @@
                     }
                 }
             }
+            li.active{
+                a{
+                    color: $native-hover;
+                }
+                 a:after{
+                    content:"";
+                    width: 100%;
+                    top:0;
+                    height: 3px;
+                    background: #275B84;
+                    position: absolute;
+                    left:0;
+                    right: 0;
+                    display: none;
+                     @media (min-width: $lg) {
+                        display: block;
+                     }
+                } 
+            }
             li:hover{
                 a:after{
                     content:"";
                     width: 100%;
                     top:0;
                     height: 3px;
-                    background: #FFFFFF;
+                    background: #275B84;
                     position: absolute;
                     left:0;
                     right: 0;
@@ -383,6 +402,25 @@
                         color:#BED8ED;
                     }
                 }
+            }
+                        li.active{
+                a{
+                    color: #BED8ED;;
+                }
+                 a:after{
+                    content:"";
+                    width: 100%;
+                    top:0;
+                    height: 3px;
+                    background: #BED8ED;
+                    position: absolute;
+                    left:0;
+                    right: 0;
+                    display: none;
+                     @media (min-width: $lg) {
+                        display: block;
+                     }
+                } 
             }
 
             .lang-link {

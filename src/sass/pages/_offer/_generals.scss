@@ -80,6 +80,9 @@
     @media (min-width: $full-hd) {
         margin-top: -280px;
         height: 905px;
+         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+               margin-top: -80px;  
+            }
     }
 
     .section-img-skew-left {
@@ -149,6 +152,9 @@
         @media (min-width: $full-hd) {
             top: 226px;
             height: 679px;
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+               top: 126px; 
+            }
         }
 
         div {

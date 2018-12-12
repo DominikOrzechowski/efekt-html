@@ -60,6 +60,12 @@
                 color: #414141;
               //  line-height: 3.3rem;
             }
+            a{
+            	 &:hover,
+        &:focus {
+           color:$native-hover;
+        }
+            }
         }
 
         .col-xl-3 {
