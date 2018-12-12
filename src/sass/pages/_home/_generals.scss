@@ -113,6 +113,7 @@
             }
         }
     }
+
 }
     .arrow-link {
         display: flex;
@@ -146,6 +147,11 @@
             }
         }
     }
+    .arrow-link.arrow-link--white {
+        .icon{
+            color:#fff;
+        }
+      }
 .section-entry-offer {
     max-width: 1930px;
     margin: 0 auto;

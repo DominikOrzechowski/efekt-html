@@ -1,0 +1,106 @@
+.section-default.section-offer-variants {
+    padding: 25px 0 0px;
+	.small-block-heading{
+		margin-bottom: 48px;
+	}
+    .variant-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       
+        align-items: center;
+        height: 191px;
+        padding: 40px 30px 30px;
+        background: #EBEBEB;
+        margin-bottom: 15px;
+        
+        @media (min-width: $sm){
+        	 justify-content: space-between;
+        }
+ @media (min-width:$md){
+ 	   padding: 40px 61px 30px;
+
+ }
+        &__title {
+            display: block;
+            font-size: 2.7rem;
+            line-height: 3rem;
+            letter-spacing: $letter-20;
+            font-family: $font-primary;
+            text-align: center;
+            @media (min-width: 575px){
+            	text-align: left;
+            }
+            br{
+            	@media (max-width: 575px){
+            		display: none;
+            	}
+            }
+        }
+
+        &:hover,
+        &:focus {
+            background: #EAF1F7;
+
+            .text-link {
+                color: #275B84;
+            }
+        }
+    }
+
+    .row {
+    	.col-12{
+    		padding: 0;
+    	}
+        .col-12:nth-child(1) {
+            .variant-item {
+
+                @media (min-width:$md){-webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+            }
+            }
+        }
+
+        .col-12:nth-child(2) {
+            .variant-item {
+                @media (min-width:$md){-webkit-clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+
+                padding-left: 77px;
+            }
+            }
+        }
+
+        .col-12:nth-child(3) {
+            .variant-item {
+               @media (min-width:$md){ -webkit-clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
+                clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
+            }
+            }
+        }
+
+        .col-12:nth-child(4) {
+            .variant-item {
+               @media (min-width:$md){ -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 5% 0);
+                clip-path: polygon(0 100%, 100% 100%, 100% 0, 5% 0);
+                padding-left: 71px;
+            }
+            }
+        }
+    }
+}
+
+.section-default.section-contact-form.valution-section{
+  padding: 25px 0 60px;
+ @media (min-width: $lg) {
+        padding: 45px 0 80px;
+    }
+    @media (min-width: $xle) {
+        padding: 57px 0 159px;
+    }
+}
+.section-default.section-entry-main.section-entry-main--valution{
+	.offset-col-top{
+		margin-top: 12px;
+	}
+}

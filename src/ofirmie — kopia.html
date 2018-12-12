@@ -18,6 +18,8 @@
     	<!-- build:css css/style.min.css -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+    <link rel="stylesheet" href="css/photoswipe.css"> 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- endbuild -->
    
@@ -27,8 +29,8 @@
 
             <header class="header-main header-main--blue fixed-top">
                 <div class="container">
-	<a class="header-main__logo logo--native" title="Efekt - Przejdź do strony głównej"><img src="img/logo/logo_efekt_meble.svg" class="img-fluid" alt=""></a>
-	<a class="header-main__logo logo--white" title="Efekt - Przejdź do strony głównej"><img src="img/logo/logo_efekt_meble_white.svg" class="img-fluid" alt=""></a>
+	<a href="index.html" class="header-main__logo logo--native" title="Efekt - Przejdź do strony głównej"><img src="img/logo/logo_efekt_meble.svg" class="img-fluid" alt=""></a>
+	<a href="index.html" class="header-main__logo logo--white" title="Efekt - Przejdź do strony głównej"><img src="img/logo/logo_efekt_meble_white.svg" class="img-fluid" alt=""></a>
 	<button type="button" class="header-main__btn-nav nav-open"><span class="icon icon-menu"></span></button>
 	<button type="button" class="header-main__btn-nav nav-close"><span class="icon icon-close"></span></button>
 	<div class="header-main__socials">
@@ -56,10 +58,12 @@
                 <section class="section-default section-entry-main large-padding bg-blue">
                     <div class="container"> 
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-md-5">
-                                <h1 class="entry-heading">O firmie</h1>
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <header class="section-entry-main__header">
+                                    <h1 class="entry-heading">O firmie</h1>
+                                </header>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-5 offset-md-2">
+                            <div class="col-12 col-sm-6 col-md-5 offset-md-1 pr-lg-0">
                                 <div class="section-text-col">
                                     <p class="text-section">Od 2005 roku zajmujemy się dystrybucją i sprzedażą mebli oraz foteli biurowych. Dzięki ogromnemu zaangażowaniu naszych pracowników regularnie się rozwijamy. Od zawsze idziemy z duchem czasu, dlatego też stale rozwijamy naszą działalność. Aktualnie oferujemy nie tylko wygodne gabinetowe fotele i sofy, ale także ergonomiczne krzesła dla szkół i przedszkoli oraz funkcjonalne meble biurowe.</p>
                                 </div>
@@ -298,6 +302,9 @@
     <script type="text/javascript" src="js/happy.methods.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/sliders.js"></script>
+    <script src="js/photoswipe.min.js"></script> 
+    <script src="js/photoswipe-ui-default.min.js"></script> 
+    <script src="js/jqPhotoSwipe.min.js"></script> 
     <!-- endbuild -->
     <!-- build:js js/plugins.min.js -->
     <script type="text/javascript" src="js/main.js"></script>
