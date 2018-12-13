@@ -1,0 +1,243 @@
+.pagination {
+    display: block;
+    text-align: center;
+    margin: 15px auto 0px;
+
+    //  max-width: 322px;
+    @media (min-width: $lg) {
+        //   max-width: 425px;
+        margin: 40px auto 25px;
+    }
+
+    @media (min-width: $xl) {
+        margin: 25px auto 12px;
+    }  @media (min-width: $xle-hd) {
+margin:78px auto 61px;
+}
+    &__list {
+        display: inline-flex;
+        margin: 0 auto;
+        padding: 0px;
+        list-style: none;
+        position: relative;
+        text-align: left;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 10px;
+
+        @media (min-width: $lg) {
+            //padding: 0px;
+        }
+
+        li {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 0px;
+
+            @media (min-width: $lg) {
+                font-size: 1.6rem;
+            }
+
+            a {
+                font-size: 1.4rem;
+                font-weight: 400;
+
+                // padding: 3px 9px;
+                // background:#fff;
+                display: inline-block;
+                width: 25px;
+                height: 32px;
+                line-height: 29px;
+                color: #233340;
+                text-align: center;
+                letter-spacing: $letter--30;
+
+                @media (min-width: $lg) {
+                    font-size: 1.6rem;
+                    height: 39px;
+                    width: 35px;
+                    line-height: 39px;
+                }
+                @media (min-width: $xle-hd) {
+                    font-size: 3rem;
+                     height: 70px;
+                    width: 66px;
+                    line-height: 66px;
+                }
+
+                &:hover,
+                &:focus {
+                    color: $native-hover;
+
+                    .icon {
+                        color: $native-hover;
+                    }
+
+                    // background: #233340;
+               
+                }
+            }
+        }
+
+        .text-prev,
+        .text-next {
+            margin-right: 0px;
+
+            //   position: absolute;
+            left: 0;
+
+            //   border:1px solid #dbdbdb;
+            top: 0;
+           
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+
+            @media (min-width: $lg) {
+                position: relative;
+                top: 2px;
+            }
+  @media (min-width: $xle-hd) {
+                  
+                     height: 70px;
+                    width: 66px;
+                  
+                }
+            span::before {
+                font-size: 1rem;
+                margin: 0;
+                top: -2px;
+                color: #000000;
+                position: relative;
+
+                @media (min-width: $lg) {
+                    font-size: 1.1rem;
+                }
+                  @media (min-width: $xle-hd) {
+                    font-size: 2.2rem;
+                  }
+            }
+
+            a {
+                //  background: #fff;
+                padding: 3px 10px;
+                display: inline-block;
+                height: 30px;
+
+                @media (min-width: $lg) {
+                    height: 39px;
+                    line-height: 42px;
+                }
+                  @media (min-width: $xle-hd) {
+                 
+                     height: 70px;
+                    width: 66px;
+                    line-height: 66px;
+                    
+                }
+            }
+
+            &:hover,
+            &:focus {
+                a {
+                    color: $native-hover;
+                }
+
+                span::before {
+                    color: $native-hover;
+                }
+            }
+
+            .icon {
+                position: relative;
+                top: -2px;
+                left: -2px;
+
+                @media (min-width: $lg) {
+                    top: -3px;
+                    left: 0;
+                }
+            }
+        }
+
+        .text-prev {
+            @media (min-width: $lg) {
+                margin-right: 15px;
+            }
+        }
+
+        .text-next {
+            margin-left: 0px;
+            margin-right: 0;
+            right: 0;
+            left: auto;
+            border-right: 0;
+
+            @media (min-width: $lg) {
+                margin-left: 15px;
+            }
+
+            span::before {}
+        }
+
+        .text-dots {
+            padding: 3px 10px;
+             @media (min-width: $xle-hd) {
+                line-height: 7rem;
+             }
+        }
+
+        .current {
+            //width: 29px;
+            /// height: 27px;
+            // line-height: 20px;
+            color: #fff;
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 400;
+            position: relative;
+
+            // background: #df3a1a;
+            @media (min-width: $lg) {
+                font-size: 1.6rem;
+            }
+  @media (min-width: $xle-hd) {
+                font-size: 3rem;
+            }
+            a {
+                color: #fff;
+                display: inline-block;
+                font-size: 1.4rem;
+                font-weight: 400;
+                position: relative;
+                border:1px solid #C9C9C9;
+
+                //   left:0.04rem;
+                color: $native-hover;
+
+                // top:0px;
+                width: 25px;
+                height: 32px;
+                line-height: 29px;
+
+                @media (min-width: $lg) {
+                    font-size: 1.6rem;
+                    width: 35px;
+                    height: 39px;
+                    line-height: 39px;
+                }
+                  @media (min-width: $xle-hd) {
+                font-size: 3rem;
+                 height: 70px;
+                    width: 66px;
+                    line-height: 66px;
+            }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,43 @@
+.section-default.section-col-with-txt {
+    .section-col-with-txt__content.section-col-with-txt__content--one-col {
+      
+        margin: 0 auto;
+        padding: 15px 0;
+          @media (min-width: $sm) {
+            padding: 40px 0px 58px;
+        }
+
+        @media (min-width: $md) {
+            padding: 41px 0px 78px;
+              max-width:650px;
+        }
+         @media (min-width: $xl) {
+            padding: 61px 0px 130px;
+             max-width: 1182px;
+        }
+    @media (min-width: $full-hd) {
+        padding: 82px 0 209px;
+         
+    }
+    }
+
+    .row-section-padding {
+        padding: 25px 0px 1px;
+
+        @media (min-width: $sm) {
+            padding: 44px 0px 28px;
+        }
+
+        @media (min-width: $md) {
+            padding: 61px 0px 38px;
+        }
+
+       
+            
+
+            @media (min-width: $full-hd) {
+                padding: 150px 0 29px; margin-top: 12px;
+            }
+        
+    }
+}

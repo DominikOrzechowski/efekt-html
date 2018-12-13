@@ -1,0 +1,129 @@
+
+/* IMPORT STYLES */
+
+@import 'helpers/variables.scss';
+
+/* BASE */
+
+
+@import 'base/base.scss';
+@import 'base/icons.scss';
+@import 'base/fonts.scss';
+@import 'base/typography.scss';
+
+/* HELPERS */
+
+@import 'helpers/mixins.scss';
+@import 'helpers/helpers.scss';
+
+/* COMPONENTS */
+
+@import 'components/project-styles.scss';
+@import 'components/navigation.scss';
+@import 'components/buttons.scss';
+@import 'components/forms.scss';
+@import 'components/modal.scss';
+@import 'components/pagination.scss';
+@import 'components/text-editor.scss';
+@import 'components/logo-slider.scss';
+@import 'components/products-slider.scss';
+@import 'components/aside-offer.scss';
+@import 'components/breadcrumbs.scss';
+
+/* LAYOUT */
+
+@import 'layout/header.scss';
+@import 'layout/header-fixed.scss';
+@import 'layout/generals.scss';
+@import 'layout/grid.scss';
+@import 'layout/footer.scss';
+
+/* PAGES */
+
+/* -_Home */
+
+@import 'pages/_home/_generals.scss';
+
+/*--*/
+
+/* -_Blog */
+
+@import 'pages/_blog/_generals.scss';
+@import 'pages/_blog/_view.scss';
+/*--*/
+
+/* -_Realizations */
+
+@import 'pages/_realizations/_generals.scss';
+
+/*--*/
+
+/* -_Reference */
+
+@import 'pages/_reference/_generals.scss';
+@import 'pages/_reference/_list.scss';
+
+/*--*/
+
+/* -_Offer */
+
+@import 'pages/_offer/_generals.scss';
+
+/*--*/
+
+/* -_Brand */
+
+@import 'pages/_brand/_generals.scss';
+
+/*--*/
+
+/* -_Achievements */
+
+@import 'pages/_achievements/_generals.scss';
+
+/*--*/
+
+/* -_Architect */
+
+@import 'pages/_architect/_generals.scss';
+
+/*--*/
+
+/* -_Ergonomics */
+
+@import 'pages/_ergonomics/_generals.scss';
+@import 'pages/_ergonomics/_school.scss';
+@import 'pages/_ergonomics/_work.scss';
+
+/*--*/
+
+/* -_Valuation */
+
+@import 'pages/_valuation/_generals.scss';
+
+/*--*/
+
+/* -_Furniture */
+
+@import 'pages/_furniture/_generals.scss';
+
+/*--*/
+
+/* -_Contact */
+
+@import 'pages/_contact/_generals.scss';
+
+/*--*/
+
+/* -_Static */
+
+@import 'pages/_static/_generals.scss';
+
+/*--*/
+
+
+/* VENDORS */
+
+@import 'vendors/jquery.scss';
+
+

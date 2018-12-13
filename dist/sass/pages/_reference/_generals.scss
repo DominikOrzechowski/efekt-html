@@ -1,0 +1,186 @@
+.section-default.section-entry-main.section-entry-main--reference {
+    .section-entry-main__header {}
+
+    .offset-col-top {
+    	 @media (min-width: $sm) {
+            margin-top: 53px;
+        }
+        	 @media (min-width: $md) {
+            margin-top: 63px;
+        }
+        	 @media (min-width: $lg) {
+            margin-top: 70px;
+        }
+        @media (min-width: $full-hd) {
+            margin-top: 120px;
+        }
+    }
+    .arrow-link{
+    	  @media (min-width: $full-hd) {
+    	  	margin-top: 53px;
+    	  }
+    }
+}
+
+.section-slider-reference{
+    overflow: hidden;
+    padding-bottom: 50px;
+@media (min-width: $full-hd) {
+            padding-bottom: 127px;
+        }
+    .section-default-header {
+        margin-bottom: 25px;
+ @media (min-width: $md) {
+            margin-bottom: 45px;
+        }
+        @media (min-width: $xl) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__content{
+    	margin-top: 30px;
+@media (min-width: $lg) {
+margin-top: 59px;
+}
+    	&__item{
+    		display: block;
+    		background: #EBEBEB;
+    		min-height: 200px;
+    		padding: 25px 25px 113px;
+    		 -webkit-clip-path:polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+        clip-path:polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+        @media (min-width: $lg) {
+   	padding: 25px 35px 113px;
+   }
+       @media (min-width: $xle) {
+padding: 25px 80px 113px 25px;
+       }
+@media (min-width: $full-hd) {
+   	height: 372px;
+    		padding: 70px 125px 80px 71px;
+   }
+
+    		time{
+    			display: block;
+    			font-size: 2rem;
+    			color:#414141;
+    		}
+    		&__title{
+    			display: block;
+    			margin:23px 0 0;
+    			color:#414141;
+    			font-size: 2rem;
+    			line-height: 2.5rem;
+    			font-family: $font-primary;
+    			letter-spacing: $letter-20;
+    			height: 77px;
+    			overflow: hidden;
+    			 @media (min-width: $xle) {
+font-size: 2.4rem;
+    			line-height: 2.8rem;
+    			height: 82px;
+       }
+    			@media (min-width: $full-hd) {
+    				font-size: 2.7rem;
+    			line-height: 3rem;
+    			height: 122px;
+    			}
+    		}
+    		.text-link{
+    			position: absolute;
+    			bottom:20px;
+    			@media (min-width: $full-hd) {
+    					bottom:53px;
+    			}
+    		}
+    		&:hover,
+    		&:focus{
+    			background: #EAF1F7;
+    		}
+    	}
+    	    	.owl-stage {
+    		.owl-item:nth-child(1) {
+                .item {
+                    .section-slider-reference__content__item {
+               -webkit-clip-path:polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+        clip-path:polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+                    }
+                }
+            }
+            .owl-item:nth-child(2n) {
+                .item {
+                    .section-slider-reference__content__item {
+                        -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+                        clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    .owl-stage {
+        overflow: hidden;
+    }
+
+    .owl-stage-outer {
+        overflow: visible !important;
+    }
+
+    .owl-nav {
+        @media (min-width: $xle) {
+            margin-top: -45px;
+        }
+
+        @media (min-width: $full-hd) {
+            margin-top: -70px;
+        }
+    }
+
+    .owl-dots {
+        margin-top: 18px;
+
+        @media (min-width: $full-hd) {
+            margin-top: 84px;
+        }
+    }
+}
+
+
+    .tab-nav{
+        display: block;
+        &__item{
+            list-style: none;
+            padding: 0;
+            margin:0;
+            li{
+                display: block;
+                margin-bottom: 7px;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color:#393C3E;
+                letter-spacing: $letter-30;
+                line-height: 1.4rem;
+                text-transform: uppercase;
+                cursor:pointer;
+                    @media (min-width: $xs) {
+                        margin-bottom: 0;
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+                @media (min-width: $lg) {
+                    margin-right: 49px;
+                }
+                &:hover,
+                &:focus{
+                        color:#969696;
+                }
+            }
+            li.active{
+                color:#969696;
+            }
+        }
+    }

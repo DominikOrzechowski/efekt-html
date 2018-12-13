@@ -1,0 +1,226 @@
+.text-editor {
+
+    p, li, span {
+        font-size: 1.3rem !important;
+        line-height: 2rem !important;
+        font-weight: 400;
+        font-family: $font-base !important;
+        color: #626262 !important;
+        margin-bottom: 15px;
+         @media (min-width: $md) {
+        margin-bottom: 20px;
+    }
+
+        @media (min-width: $sm) {
+            font-size: 1.3rem !important;
+            line-height: 2rem !important;
+        }
+
+        @media (min-width: $md) {
+            font-size: 1.4rem !important;
+            line-height: 2.4rem !important;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 1.5rem !important;
+            line-height: 2.8rem !important;
+        }
+
+        @media (min-width: $xle-more) {
+            font-size: 1.6rem !important;
+            line-height: 2.9rem !important;
+        }
+
+        @media (min-width: $full-hd) {
+            font-size: 2rem !important;
+            line-height: 3.3rem !important;
+        }
+    }
+    img{
+        margin:30px 0;
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-size: 1.7rem !important;
+        line-height: 2.7rem !important;
+        font-weight: 500;
+        letter-spacing: $letter--30;
+        color: #414141 !important;
+        font-family: $font-base !important;
+        margin:15px 0 25px;
+
+        @media (min-width: $md) {
+            font-size: 1.8rem !important;
+            line-height: 2.8rem !important;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 2rem !important;
+            line-height: 3rem !important;
+        }
+ @media (min-width: 1400px) {
+        font-size: 2.5rem !important;
+        line-height: 3.5rem !important;
+    }
+
+        @media (min-width: $full-hd) {
+            font-size: 3rem !important;
+            line-height: 5rem !important;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+        line-height: 2.5rem !important;
+
+             @media (min-width: $md) {
+            font-size: 1.7rem !important;
+            line-height: 2.7rem !important;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 1.9rem !important;
+            line-height: 2.9rem !important;
+        }
+
+        @media (min-width: $xle-hd) {
+            font-size: 2.4rem !important;
+            line-height: 3.4rem !important;
+        }
+
+        @media (min-width: $full-hd) {
+            font-size: 2.9rem !important;
+            line-height: 4.9rem !important;
+        }
+    }
+    h4 {
+        font-size: 1.4rem !important;
+        line-height: 2.4rem !important;
+
+             @media (min-width: $md) {
+            font-size: 1.6rem !important;
+            line-height: 2.6rem !important;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 1.8rem !important;
+            line-height: 2.8rem !important;
+        }
+
+        @media (min-width: $xle-hd) {
+            font-size: 2.3rem !important;
+            line-height: 3.3rem !important;
+        }
+
+        @media (min-width: $full-hd) {
+            font-size: 2.8rem !important;
+            line-height: 4.8rem !important;
+        }
+    }
+       h5 {
+        font-size: 1.3rem !important;
+        line-height: 2.3rem !important;
+
+             @media (min-width: $md) {
+            font-size: 1.5rem !important;
+            line-height: 2.5rem !important;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 1.7rem !important;
+            line-height: 2.7rem !important;
+        }
+
+        @media (min-width: $xle-hd) {
+            font-size: 2.2rem !important;
+            line-height: 3.2rem !important;
+        }
+
+        @media (min-width: $full-hd) {
+            font-size: 2.7rem !important;
+            line-height: 4.7rem !important;
+        }
+    }
+        h6 {
+        font-size: 1.2rem !important;
+        line-height: 2.2rem !important;
+
+             @media (min-width: $md) {
+            font-size: 1.4rem !important;
+            line-height: 2.4rem !important;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 1.6rem !important;
+            line-height: 2.6rem !important;
+        }
+
+        @media (min-width: $xle-hd) {
+            font-size: 2.1rem !important;
+            line-height: 3.1rem !important;
+        }
+
+        @media (min-width: $full-hd) {
+            font-size: 2.6rem !important;
+            line-height: 4.6rem !important;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            position: relative;
+            padding-left: 25px;
+
+            @media (min-width: $md) {}
+
+            @media (min-width: $xle-hd) {
+                padding-left: 30px;
+                margin-bottom: 42px;
+            }
+        }
+
+        li:before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #9F9F9F;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 8px;
+
+            @media (min-width: $md) {
+                width: 7px;
+                height: 7px;
+                top: 10px;
+            }
+
+            @media (min-width: $lg) {
+                top: 11px;
+            }
+
+            @media (min-width: $xle-hd) {
+                width: 10px;
+                height: 10px;
+                top: 10px;
+            }
+        }
+    }
+    ul,ol{
+		margin:30px 0 20px;
+		     @media (min-width: $md) {
+     margin:44px 0 30px;
+    }
+		li{
+			 font-family: $font-base !important;
+        color: #626262 !important;
+		}
+	}
+}

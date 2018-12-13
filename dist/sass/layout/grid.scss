@@ -1,0 +1,21 @@
+.page-wrapper{
+	max-width: 1470px;
+	width: 100%;
+}
+
+.container{
+	@media (min-width: 1300px) {
+		max-width: 1250px;
+		width: 100%;
+	}
+	@media (min-width: 1450px) {
+		max-width: 1405px;
+		width: 100%;
+	}
+}
+.col-xs-6{
+	@media (min-width: 424px) and (max-width: 767px) {
+		flex:0 0 50%;
+		max-width: 50%;
+	}
+}

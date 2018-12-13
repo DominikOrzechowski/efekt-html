@@ -1,0 +1,119 @@
+.section-default.section-entry-main--ergonomics{
+     @media (min-width: $full-hd) {
+           padding-bottom: 200px;
+        }
+       
+             .offset-col-top {
+        @media (min-width: $sm) {
+            margin-top: 53px;
+        }
+
+        @media (min-width: $md) {
+            margin-top: 63px;
+        }
+
+        @media (min-width: $lg) {
+            margin-top: 70px;
+        }
+         @media (min-width: $xl) {
+            margin-top: 80px;
+        }
+        
+            @media (min-width: $full-hd) {
+         margin-top: 117px;
+        }
+
+       
+    
+         
+        }
+}
+
+
+.section-default.section-img-skew.section-img-skew--offset {
+    height: 207px;
+
+    @media (min-width: $sm) {
+        height: 207px;
+    }
+
+    @media (min-width: $md) {
+        height: 290px;
+    }
+
+    @media (min-width: $lg) {
+        height: 370px;
+    }
+
+    @media (min-width: $xle) {
+        height: 463px;
+    }
+    @media (min-width: $full-hd) {
+        height: 772px;
+    }
+
+    .section-img-skew-left {
+    	        max-width: 56%;
+            flex:0 0 56%;
+
+       
+ 
+        @media (min-width: $full-hd) {
+            max-width: 56%;
+            flex:0 0 56%;
+        }
+    }
+
+    .section-img-skew-right {
+    	        max-width: 59.5%;
+            flex:0 0 59.5%;
+            margin-top: 5%;
+
+       
+
+        @media (min-width: $full-hd) {
+            max-width: 59.5%;
+            flex:0 0 59.5%;
+            margin-top: 96px;
+        }
+    }
+
+    .section-img-skew-left,
+    .section-img-skew-right {
+    	height: 190px;
+
+    @media (min-width: $sm) {
+        height: 180px;
+    }
+
+    @media (min-width: $md) {
+        height: 250px;
+    }
+
+    @media (min-width: $lg) {
+        height: 320px;
+    }
+
+    @media (min-width: $xle) {
+        height: 400px;
+    }
+ 
+        @media (min-width: $full-hd) {
+            height: 679px;
+        }
+    }
+}
+
+.section-default.section-col-with-txt.section-col-with-txt--offset {
+		  @media (min-width: $full-hd) {
+padding: 150px 0 185px;
+}
+	.section-col-with-txt__content{
+		.btn-main{
+			  @media (min-width: $full-hd) {
+            margin-top: 0;
+        }
+		}
+	}
+}
+

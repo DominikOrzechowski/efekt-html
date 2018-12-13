@@ -1,0 +1,107 @@
+.pageOverlay {
+    background: rgba(57, 75, 79, 0.55);
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 11;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+
+    @media (min-width: $lg) {
+        z-index: 60;
+        background: transparent;
+    }
+}
+
+.pageOverlay {
+    bottom: -5px;
+}
+.opacity-0{
+   
+    .section-entry-offer__content__item:after{
+        display: none;
+    }
+}
+.pageOverlay.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.hide {
+    display: none;
+}
+
+.default-line {
+    border-top: 1px solid #D5D5D5;
+    margin-top: 17px;
+}
+
+.bg-gallery {
+    background: $color-gallery;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.clear-padding {
+    padding-top: 0;
+}
+
+.bg-mine-shaft {
+    background: $color-mine-shaft;
+}
+
+.d-none-lg {
+    @media (min-width: $md) {
+        display: none;
+    }
+}
+
+.d-none-md {
+    @media (min-width: $md) {
+        display: none;
+    }
+}
+
+.bg-blue {
+    background: $native-hover;
+}
+
+.content-tab {
+    opacity: 0;
+    visibility: hidden;
+    height: 0 !important;
+}
+
+.showAll {
+    display: none;
+}
+
+.showAll.d-block {
+    display: block;
+}
+
+.content-tab.all-content {
+       opacity: 1;
+    visibility: visible;
+    height: auto !important;
+    .content-btn {
+        display: none;
+    }
+
+    .showAll.d-block {
+        // display: block;
+   
+    }
+}
+
+.content-tab.d-block {
+    opacity: 1;
+    visibility: visible;
+    height: auto !important;
+}

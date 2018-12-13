@@ -1,0 +1,98 @@
+html {
+    font-size: 62.5%;
+     position: relative;
+     overflow-x: hidden;
+}
+
+body {
+    font-family: $font-base;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: normal;
+    font-style: normal;
+    background: #fff;
+    color: $native-color;
+    padding-top: 48px;
+    overflow-x:hidden;
+    position: relative;
+transition:150ms padding ease-in-out;
+    @media (min-width: $md) {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    @media (min-width: $lg) {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding-top: 70px;
+    }
+
+    @media (min-width: $xle-hd) {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+        @media (min-width: $full-hd) {
+           padding-top: 91px;
+        }
+}
+figure{
+  margin:0;
+}
+p {
+    font-size: $font-base-size;
+}
+
+a {
+    text-decoration: none;
+    color: $native-color;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $native-hover;
+}
+
+a:focus,
+a:active {
+    outline: none;
+    text-decoration: none;
+}
+
+textarea:hover,
+textarea:active,
+textarea:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+
+    // -webkit-appearance: none;
+}
+
+textarea:focus,
+div.bootstrap-select .dropdown-toggle:focus,
+button,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: #468BE8;
+    box-shadow: none;
+    outline: 0 none !important;
+}
