@@ -24,6 +24,7 @@
                 }
   @media (min-width: $lg) {
   	border:0;margin-bottom: 17px;
+    pointer-events: none;
   }
                 @media (min-width: $xl) {
                     font-size: 2rem;
@@ -83,7 +84,7 @@
             }
   }
     &__block.footer-main__block--contact {
-        .footer-main__block__title {
+        .footer-main__block__nav__title{
             display: none;
 
             @media (min-width: $lg) {
