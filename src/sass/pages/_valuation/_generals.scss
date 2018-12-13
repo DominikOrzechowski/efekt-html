@@ -40,6 +40,7 @@
             line-height: 2.5rem;
             letter-spacing: $letter-20;
             font-family: $font-primary;
+            color:#414141;
             text-align: center;
              @media (min-width: $xl) {
                	 font-size: 2.2rem;	 line-height: 3rem;
@@ -72,6 +73,16 @@
                 color: #275B84;
             }
         }
+
+
+input[type="radio"] {
+    display:none;
+     -webkit-appearance: none;
+}
+input[type="radio"]:checked + label{
+     background-color:#CC3300;
+}
+
     }
      .variant-item.current {
      	 background: #EAF1F7;
@@ -153,15 +164,8 @@
 }
 
 .section-default.section-contact-form.valution-section {
-    padding: 25px 0 60px;
+   padding: 25px 0 0px;
 
-    @media (min-width: $lg) {
-        padding: 45px 0 80px;
-    }
-
-    @media (min-width: $xle) {
-        padding: 57px 0 159px;
-    }
 }
 
 .section-default.section-entry-main.section-entry-main--valution {
@@ -171,5 +175,17 @@
     	 } @media (min-width: $md) {
         margin-top: 12px;
     }
+    }
+}
+
+.row.row-form{
+   padding: 25px 0 60px;
+
+    @media (min-width: $lg) {
+        padding: 45px 0 80px;
+    }
+
+    @media (min-width: $xle) {
+        padding: 57px 0 159px;
     }
 }

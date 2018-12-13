@@ -155,3 +155,14 @@ function firstItemAnimation() {
   
 }
 setTimeout(firstItemAnimation, 500);
+
+
+
+
+$('.variant-item').click(function() {
+   if($("input[type='radio']").is(':checked')) { 
+
+                $(this).addClass('current');
+                 $(this).parents().siblings().find('.variant-item').removeClass('current');
+    }
+});

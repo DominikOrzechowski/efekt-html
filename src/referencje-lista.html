@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/default-skin/default-skin.css"> 
     <link rel="stylesheet" href="css/photoswipe.css"> 
+    <link rel="stylesheet" href="css/aos.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- endbuild -->
    
@@ -57,10 +58,10 @@
             <main class="main pt-0">
                 <section class="section-default section-reference-list">
                     <div class="container">
-                        <header class="section-default-header">
+                        <header class="section-default-header" data-aos="fade-up" data-aos-delay="200">
                             <h2 class="entry-heading">Lista referencji</h2>
                         </header>
-                        <nav class="tab-nav">
+                        <nav class="tab-nav" data-aos="fade-up" data-aos-delay="300">
                             <ul class="tab-nav__item">
                                 <li  data-content-class="content-all" class="active">Wszystkie</li>
                                 <li  data-content-id="content-1">PRZEDSIĘBIORSTWA</li>
@@ -68,7 +69,7 @@
                                 <li  data-content-id="content-3">URZĘDY</li>
                             </ul>
                         </nav>
-                        <div class="section-reference-list__content gallery">
+                        <div class="section-reference-list__content gallery" data-aos="fade-up" data-aos-delay="200">
                             <div class="content-tab d-block" id="content-1">
                                 <ul class="reference-list">
                                     <li>
@@ -81,13 +82,13 @@
                                     </li>
 
                                     <li>
-                                        <a href="img/reference/PO ZIELONA GÓRA 18.05.09(1).jpg" class="reference-list__item"  title="Przedsiębiorstow Wodociągów i Kanalizacji w Głogowie sp. z o.o.">
+                                        <a href="img/reference/DCI Wałbrzych 22.03.2013.jpg" class="reference-list__item"  title="Przedsiębiorstow Wodociągów i Kanalizacji w Głogowie sp. z o.o.">
                                             <span class="item-name">Przedsiębiorstow Wodociągów i Kanalizacji w Głogowie sp. z o.o.</span>
                                             <span class="text-link text-link-icon--right">Wyświetl oryginał <span class="icon icon-next"></span></span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="img/reference/PO ZIELONA GÓRA 18.05.09(1).jpg" class="reference-list__item" title="Sąd Rejonowy w Inowrocławiu">
+                                        <a href="img/reference/G3 GŁOGÓW 21.09.2011.jpg" class="reference-list__item" title="Sąd Rejonowy w Inowrocławiu">
                                             <span class="item-name">Sąd Rejonowy w Inowrocławiu</span>
                                             <span class="text-link text-link-icon--right">Wyświetl oryginał <span class="icon icon-next"></span></span>
                                         </a>
@@ -177,7 +178,7 @@
                         </div>
                     </div>
                 </section>
-                <aside class="section-default aside-offer">
+                <aside class="section-default aside-offer" data-aos="fade-up" data-aos-delay="200">
                     <div class="container">
                         <div class="aside-offer__content">
                             <h3 class="small-section-heading">Zamów EFEKTowne meble<br> do Twojego biura</h3>
@@ -186,7 +187,7 @@
                     </div>
                 </aside>
                 <!-- section seperator -->
-                <div class="container d-none-lg">
+                <div class="container d-none-lg" data-aos="fade-up" data-aos-delay="200">
                     <div class="row">
                       <div class="col-12">
                           <hr class="default-line">
@@ -305,10 +306,22 @@
     <script src="js/photoswipe.min.js"></script> 
     <script src="js/photoswipe-ui-default.min.js"></script> 
     <script src="js/jqPhotoSwipe.min.js"></script> 
+    <script src="js/aos.min.js"></script>
     <!-- endbuild -->
     <!-- build:js js/plugins.min.js -->
     <script type="text/javascript" src="js/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+        AOS.init({
+             offset: 80, 
+             delay: 400,
+             duration: 600,
+             once: true,
+             disable:'mobile',
+             
+        });
+    </script>
 
     </body>
 </html>
