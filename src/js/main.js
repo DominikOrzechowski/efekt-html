@@ -157,7 +157,13 @@ function firstItemAnimation() {
 setTimeout(firstItemAnimation, 500);
 
 
+$('.checkbox').click(function() {
+   if($("input[type='checkbox']").is(':checked')) { 
 
+                $(this).toggleClass('current');
+                
+    }
+});
 
 $('.variant-item').click(function() {
    if($("input[type='radio']").is(':checked')) { 
