@@ -206,6 +206,9 @@
             display: flex !important;
             flex-wrap: wrap;
             position: relative;
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+         //  display: block !important;
+        }
         }
 
         &__item {
@@ -238,8 +241,9 @@
                 overflow: visible;
 
                 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                    flex: 0 0 33% !important;
-                    max-width: 33% !important;
+                    flex: 0 0 32.5% !important;
+                    max-width: 32.5% !important;
+                    margin-bottom: 20px;
                 }
             }
 
@@ -247,6 +251,9 @@
                 margin-bottom: 11px;
                 padding-top: 163px !important;
                 justify-content: end;
+                 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    margin-bottom: 20px;
+                 }
             }
 
             @media (min-width: $xle-hd) {

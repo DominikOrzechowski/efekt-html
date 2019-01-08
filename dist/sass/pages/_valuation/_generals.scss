@@ -18,6 +18,15 @@
         background: #EBEBEB;
         cursor:pointer;
         margin-bottom: 12px;
+          @media (min-width: $md) {
+            margin-bottom: 8px;
+          }
+           @media (min-width: $lg) {
+            margin-bottom: 12px;
+          }
+           @media (min-width: $xle) {
+            margin-bottom: 16px;
+          }
   @media (min-width: 424px) {
      //     justify-content: space-between;
             align-items: flex-start; height: 160px;
@@ -42,6 +51,9 @@
             font-family: $font-primary;
             color:#414141;
             text-align: center;
+             @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+         width:100%;
+          }
              @media (min-width: $xl) {
                	 font-size: 2.2rem;	 line-height: 3rem;
                }
@@ -96,11 +108,28 @@ input[type="radio"]:checked + label{
             }
      }
     .row {
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            margin:0 -10px;
+          }
         .col-12 {
             padding: 0;
+               @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    padding: 0 10px;
+         }
         }
 
-        .col-12:nth-child(1) {
+        .col-12:nth-child(1),
+        .col-12:nth-child(5),
+        .col-12:nth-child(9),
+        .col-12:nth-child(13),
+        .col-12:nth-child(17),
+        .col-12:nth-child(21),
+        .col-12:nth-child(25),
+        .col-12:nth-child(29),
+        .col-12:nth-child(33),
+        .col-12:nth-child(37),
+        .col-12:nth-child(41),
+        .col-12:nth-child(45) {
             .variant-item {
                 @media (min-width: 424px) and (max-width: 767px) { 
                     -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
@@ -113,7 +142,18 @@ input[type="radio"]:checked + label{
             }
         }
 
-        .col-12:nth-child(2) {
+        .col-12:nth-child(2),
+        .col-12:nth-child(6),
+        .col-12:nth-child(10),
+        .col-12:nth-child(14),
+        .col-12:nth-child(18),
+        .col-12:nth-child(22),
+        .col-12:nth-child(26),
+        .col-12:nth-child(30),
+        .col-12:nth-child(34),
+        .col-12:nth-child(38),
+        .col-12:nth-child(42),
+        .col-12:nth-child(46) {
             .variant-item {
             	 @media (min-width: 424px) and (max-width: 767px) { 
          -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 5% 0);
@@ -130,7 +170,18 @@ input[type="radio"]:checked + label{
             }
         }
 
-        .col-12:nth-child(3) {
+        .col-12:nth-child(3),
+        .col-12:nth-child(7),
+        .col-12:nth-child(11),
+        .col-12:nth-child(15),
+        .col-12:nth-child(19),
+        .col-12:nth-child(23),
+        .col-12:nth-child(27),
+        .col-12:nth-child(31),
+        .col-12:nth-child(35),
+        .col-12:nth-child(39),
+        .col-12:nth-child(43),
+        .col-12:nth-child(47) {
             .variant-item {
             	@media (min-width: 424px) and (max-width: 767px) { 
 
@@ -144,7 +195,18 @@ input[type="radio"]:checked + label{
             }
         }
 
-        .col-12:nth-child(4) {
+        .col-12:nth-child(4),
+        .col-12:nth-child(8),
+        .col-12:nth-child(12),
+        .col-12:nth-child(16),
+        .col-12:nth-child(20),
+        .col-12:nth-child(24),
+        .col-12:nth-child(28),
+        .col-12:nth-child(32),
+        .col-12:nth-child(36),
+        .col-12:nth-child(40),
+        .col-12:nth-child(44),
+        .col-12:nth-child(48) {
             .variant-item {
             	@media (min-width: 424px) and (max-width: 767px) { 
   -webkit-clip-path: polygon(5% 100%, 100% 100%, 100% 0, 0% 0);
@@ -165,6 +227,34 @@ input[type="radio"]:checked + label{
 
 .section-default.section-contact-form.valution-section {
    padding: 25px 0 0px;
+
+   .row.m-0{
+               @media (max-width: 424px) {  margin:0 -5px !important;}
+               .col-mb-6{
+                    @media (max-width: 424px) {
+                        padding: 0 5px;
+                        flex:0 0 50%;
+                        max-width: 50%;
+                    }
+               }
+
+               .variant-item{
+                 @media (max-width: 424px) {
+                  height: 145px;
+                    }
+                .variant-item__title{
+                     @media (max-width: 424px) {
+                        font-size: 1.6rem;
+                    }
+                }
+                .text-link{
+                    .icon{
+                        margin-right: 0;
+                    }
+                }
+               }
+
+   }
 
 }
 

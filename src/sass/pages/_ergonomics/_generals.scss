@@ -2,7 +2,18 @@
      @media (min-width: $full-hd) {
            padding-bottom: 200px;
         }
-       
+       .section-entry-main__header {
+       .entry-heading{
+        display: block;
+       @media (max-width: $sm) {  display: none;}
+       }
+        .entry-heading.entry-heading--mobile{
+            display: none;
+       @media (max-width: $sm) {  display: block;
+        margin-top: 20px;}
+       }
+    }
+
              .offset-col-top {
         @media (min-width: $sm) {
             margin-top: 53px;

@@ -11,4 +11,18 @@
             height: 70px;
         }
     }
+    .header-main__nav__list{
+         li.parent-item:before {
+                
+
+                @media (min-width: $lg) {
+                    top: 2.6em;
+                      right: -12px;
+                }
+                @media (min-width: $full-hd) {
+                    top: 19px;
+                }
+            }
+
+    }
 }

@@ -19,6 +19,16 @@ $(window).scroll(function() {
 
 /* nav mobile */
 
+
+$('.parent-item').click(function(e) {
+                      if (window.matchMedia('(max-width: 991px)').matches)
+{
+    $('.list-dropnav').slideToggle(200);
+ e.preventDefault();
+}
+})
+
+
 $('.header-main__btn-nav.nav-open').click(function() {
     $('.header-main__nav').slideToggle(200);
     $(this).addClass('d-none');
@@ -145,7 +155,7 @@ captionEl: true,
 fullscreenEl: false,
 zoomEl: false,
 shareEl: false,
-
+closeOnScroll:false,
 arrowEl: true,
 preloaderEl: false,
   });

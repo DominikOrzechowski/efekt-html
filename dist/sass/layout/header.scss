@@ -2,14 +2,12 @@
     border-bottom: 1px solid #D5D5D5;
     background: #fff;
 
-
     .container {
         height: 47px;
         position: relative;
         display: flex;
         align-items: center;
-        transition:150ms height ease-in-out;
-
+        transition: 150ms height ease-in-out;
 
         @media (min-width: $lg) {
             height: 70px;
@@ -23,7 +21,8 @@
     &__logo {
         width: 90px;
         display: inline-block;
- transition:none;
+        transition: none;
+
         @media (min-width: $lg) {
             width: 130px;
         }
@@ -192,10 +191,12 @@
                 max-width: 510px;
                 margin: 0 auto;
             }
- @media (min-width: 767px) {
+
+            @media (min-width: 767px) {
                 max-width: 690px;
                 margin: 0 auto;
             }
+
             @media (min-width: $lg) {
                 max-width: 100%;
             }
@@ -205,7 +206,10 @@
                     display: inline-block;
                     margin-right: 15px;
                 }
-
+ @media (min-width: $xle) {
+                   
+                    margin-right: 20px;
+                }
                 @media (min-width: $full-hd) {
                     margin-right: 25px;
                 }
@@ -226,49 +230,139 @@
                         align-items: center;
                         height: 70px;
                     }
-                     @media (min-width: $full-hd) {
-            height: 91px;
-        }
+
+                    @media (min-width: $full-hd) {
+                        height: 91px;
+                    }
 
                     &:hover,
                     &:focus {
                         color: $native-hover;
                     }
                 }
+
+                .list-dropnav {
+                    display: none;
+                    background: #fff;
+                    z-index: 11;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 0px;
+
+                    @media (min-width: $lg) {
+                        position: absolute;
+                        top: auto;border-top: 1px solid #D5D5D5;
+                        width: 200px;
+                    }
+
+                    li {
+                        display: block;
+                        margin:0;
+
+                        a {
+                            color: #414141;
+                            display: block;
+                            font-size: 1.1rem;
+                            font-weight: 700;
+                            letter-spacing: $letter-30;
+                            text-transform: uppercase;
+                            line-height: 3rem;
+                            position: relative;
+                            padding-left: 15px;
+
+                            @media (min-width: $lg) {
+                                padding: 10px 10px;
+                                border-bottom: 1px solid #D5D5D5;
+                            }
+
+                            @media (min-width: $lg) {
+                                line-height: 1.1rem;
+                                display: flex;
+                                align-items: center;
+                                height: auto !important;
+                            }
+                            &:hover,
+                            &:focus{
+                                   color: $native-hover;
+                            }
+                        }
+
+                        a:after {
+                            display: none !important;
+                        }
+                    }
+                }
             }
-            li.active{
-                a{
+
+            li.active {
+                a {
                     color: $native-hover;
                 }
-                 a:after{
-                    content:"";
+
+                a:after {
+                    content: "";
                     width: 100%;
-                    top:0;
+                    top: 0;
                     height: 3px;
                     background: #275B84;
                     position: absolute;
-                    left:0;
+                    left: 0;
                     right: 0;
                     display: none;
-                     @media (min-width: $lg) {
+
+                    @media (min-width: $lg) {
                         display: block;
-                     }
-                } 
+                    }
+                }
             }
-            li:hover{
-                a:after{
-                    content:"";
+
+            li.parent-item {
+                position: relative;
+                &:hover,
+                &:focus{
+                    .list-dropnav {
+                    display: block;
+                }
+                }
+            }
+
+            li.parent-item:before {
+                content: "\67";
+                font-family: "efektmeble" !important;
+                font-size: 0.8rem;
+                color: #393C3E;
+                position: absolute;
+                right: 0px;
+                transform: rotate(90deg);
+                top: 3px;
+                text-transform: lowercase;
+        //     transition: 150ms top ease-in-out;
+
+                @media (min-width: $lg) {
+                    top: 2.6em;
+                      right: -12px;
+                }
+                @media (min-width: $full-hd) {
+                    top: 29px;
+                }
+            }
+
+            li:hover {
+                a:after {
+                    content: "";
                     width: 100%;
-                    top:0;
+                    top: 0;
                     height: 3px;
                     background: #275B84;
                     position: absolute;
-                    left:0;
+                    left: 0;
                     right: 0;
                     display: none;
-                     @media (min-width: $lg) {
+
+                    @media (min-width: $lg) {
                         display: block;
-                     }
+                    }
                 }
             }
 
@@ -338,9 +432,16 @@
             width: 60px;
         }
 
+        @media (min-width: $xle) {
+            width: 62px;
+            font-size: 1.5rem;
+        }
+
         @media (min-width: $full-hd) {
             height: 91px;
-         //   margin-top: 3px;
+            width: 72px;
+
+            //   margin-top: 3px;
         }
 
         &:hover,
@@ -361,19 +462,22 @@
     .logo--native {
         display: none;
     }
-.header-main__socials{
-    a{
-        .icon{
-            color:#BED8ED;
-        }
-          &:hover,
-        &:focus {
+
+    .header-main__socials {
+        a {
             .icon {
-                color: #fff;
+                color: #BED8ED;
+            }
+
+            &:hover,
+            &:focus {
+                .icon {
+                    color: #fff;
+                }
             }
         }
     }
-}
+
     .header-main__btn-nav {
         border-left: 1px solid #3E6E93;
 
@@ -399,35 +503,59 @@
 
                     &:hover,
                     &:focus {
-                        color:#BED8ED;
+                        color: #BED8ED;
                     }
                 }
             }
-                        li.active{
-                a{
-                    color: #BED8ED;;
+
+           li.parent-item{
+             .list-dropnav{
+                @media (max-width: 991px) {   background:transparent;}
+                li{
+                    a{
+                        color:#fff;
+                     @media (min-width: 991px) {      color:#414141;}
+                        &:hover,
+                        &:focus{
+                           @media (min-width: 991px) {      color: $native-hover;}
+                            color:#BED8ED;
+                        }
+                    }
                 }
-                 a:after{
-                    content:"";
+            }
+
+           }
+           li.parent-item::before{
+            color:#fff;
+           }
+            li.active {
+                a {
+                    color: #BED8ED;
+                }
+
+                a:after {
+                    content: "";
                     width: 100%;
-                    top:0;
+                    top: 0;
                     height: 3px;
                     background: #BED8ED;
                     position: absolute;
-                    left:0;
+                    left: 0;
                     right: 0;
                     display: none;
-                     @media (min-width: $lg) {
+
+                    @media (min-width: $lg) {
                         display: block;
-                     }
-                } 
+                    }
+                }
             }
 
             .lang-link {
                 border-top: 1px solid #3E6E93;
-                  @media (min-width: $lg) {
-                    border-top:0;
-                  }
+
+                @media (min-width: $lg) {
+                    border-top: 0;
+                }
             }
         }
     }
@@ -440,11 +568,9 @@
         }
 
         //    border-left:1px solid #3E6E93;
-    &:hover,
+        &:hover,
         &:focus {
-            
-                color: #BED8ED;
-            
+            color: #BED8ED;
         }
     }
 }

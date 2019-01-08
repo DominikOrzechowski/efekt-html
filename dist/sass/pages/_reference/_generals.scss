@@ -1,5 +1,16 @@
 .section-default.section-entry-main.section-entry-main--reference {
-    .section-entry-main__header {}
+    .section-entry-main__header {
+       .entry-heading{
+        display: block;
+       @media (max-width: $sm) {  display: none;}
+       }
+        .entry-heading.entry-heading--mobile{
+            display: none;
+       @media (max-width: $sm) {  display: block;
+        margin-top: 20px;}
+       }
+    }
+
 
     .offset-col-top {
     	 @media (min-width: $sm) {
@@ -28,6 +39,11 @@
 @media (min-width: $full-hd) {
             padding-bottom: 127px;
         }
+        .item{
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+       margin-right: 15px;
+         }
+        }
     .section-default-header {
         margin-bottom: 25px;
  @media (min-width: $md) {
@@ -47,14 +63,16 @@ margin-top: 59px;
     		display: block;
     		background: #EBEBEB;
     		min-height: 200px;
-    		padding: 25px 25px 113px;
+    	//	padding: 25px 25px 113px;
+        padding:25px 25px 85px; 
     		 -webkit-clip-path:polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
         clip-path:polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
         @media (min-width: $lg) {
    	padding: 25px 35px 113px;
+    height: 273px;
    }
        @media (min-width: $xle) {
-padding: 25px 80px 113px 25px;
+padding: 25px 80px 113px 55px;
        }
 @media (min-width: $full-hd) {
    	height: 372px;
@@ -76,15 +94,18 @@ padding: 25px 80px 113px 25px;
     			letter-spacing: $letter-20;
     			height: 77px;
     			overflow: hidden;
+                 @media (min-width: $lg) {
+                    height: auto;
+                 }
     			 @media (min-width: $xle) {
 font-size: 2.4rem;
     			line-height: 2.8rem;
-    			height: 82px;
+    			//height: 82px;
        }
     			@media (min-width: $full-hd) {
     				font-size: 2.7rem;
     			line-height: 3rem;
-    			height: 122px;
+    		//	height: 122px;
     			}
     		}
     		.text-link{

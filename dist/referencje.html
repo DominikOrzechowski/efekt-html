@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="pl">
-
-    <head>
+   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Efekt</title>
@@ -18,11 +17,9 @@
     	<link rel="stylesheet" href="css/style.min.css">
    
 </head>
-
-    <body>
-
-            <header class="header-main fixed-top">
-                <div class="container">
+   <body>
+      <header class="header-main fixed-top">
+         <div class="container">
 	<a href="index.html" class="header-main__logo logo--native" title="Efekt - Przejdź do strony głównej"><img src="img/logo/logo_efekt_meble.svg" class="img-fluid" alt=""></a>
 	<a href="index.html" class="header-main__logo logo--white" title="Efekt - Przejdź do strony głównej"><img src="img/logo/logo_efekt_meble_white.svg" class="img-fluid" alt=""></a>
 	<button type="button" class="header-main__btn-nav nav-open"><span class="icon icon-menu"></span></button>
@@ -33,7 +30,16 @@
 	</div>
 	<nav class="header-main__nav">
 		<ul class="header-main__nav__list">
-			<li class="active"><a href="ofirmie.html">O firmie</a></li>
+			<li class="active parent-item">
+				<a href="ofirmie.html">O firmie</a>
+				<ul class="list-dropnav">
+					<li><a href="#">Oferta</a></li>
+					<li><a href="ergonomia.html">Ergonomia</a></li>
+					<li><a href="architekt.html">Dla architekta</a></li>
+					<li><a href="architekt-wnetrz.html">Aranżacje</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</li>
 			<li><a href="oferta.html">Oferta</a></li>
 			<li><a href="ergonomia.html">Ergonomia</a></li>
 			<li><a href="architekt.html">Dla architekta</a></li>
@@ -46,108 +52,126 @@
 	</nav>
 	<a href="#" class="nav__list--odd">Sklep</a>
 </div>
+      </header>
+      <main class="main pt-0">
+         <section class="section-default section-entry-main section-entry-main--reference">
+            <div class="container">
+               <div class="row flex-column-reverse flex-sm-row">
+                  <div class="col-12 col-sm-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                     <header class="section-entry-main__header">
+                        <h1 class="entry-heading">Referencje</h1>
+                        <p class="text-section">Najważniejszym celem naszej firmy jest zadowolenie klienta. Dlatego też, ogromnie cieszymy się czytając wszystkie pozytywne opinie na temat oferowanych przez nas usług. Do tej pory zdobyliśmy rzeszę stałych klientów, którzy regularnie dokonują zakupów mebli do biura oraz przedszkoli.</p>
+                        <p class="text-section">Liczne referencje potwierdzają wysoką jakość prezentowanych w naszym sklepie foteli gabinetowych, komód czy kontenerów. Co więcej, większość opinii utwierdza w przekonaniu, iż współpraca z Efekt Style była niezwykle korzystną inwestycją.</p>
+                     </header>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-5 offset-md-1 pr-lg-0" data-aos="fade-up" data-aos-delay="300">
+                     <header class="section-entry-main__header">
+                        <h2 class="entry-heading entry-heading--mobile">Referencje</h2>
+                     </header>
+                     <div class="section-text-col offset-col-top">
+                        <p class="small-block-heading">Jeżeli zastanawiają się Państwo nad zakupem mebli do biura w naszym sklepie internetowym zapraszamy do przeczytania referencji dotychczasowych klientów.</p>
+                     </div>
+                  </div>
+                  <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+                     <span class="arrow-link"><span class="icon icon-next"></span></span>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- section seperator -->
+         <section class="section-default section-slider-reference">
+            <div class="container">
+            <header class="section-default-header" data-aos="fade-up" data-aos-delay="200">
+               <h2 class="section-heading">Lista referencji</h2>
+               <a href="ofirmie.html" class="text-link text-link-icon--right">Zobacz wszystkie <span class="icon icon-next"></span></a>
             </header>
-
-            <main class="main pt-0">
-                <section class="section-default section-entry-main section-entry-main--reference">
-                    <div class="container"> 
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                                <header class="section-entry-main__header">
-                                    <h1 class="entry-heading">Referencje</h1>
-                                    <p class="text-section">Najważniejszym celem naszej firmy jest zadowolenie klienta. Dlatego też, ogromnie cieszymy się czytając wszystkie pozytywne opinie na temat oferowanych przez nas usług. Do tej pory zdobyliśmy rzeszę stałych klientów, którzy regularnie dokonują zakupów mebli do biura oraz przedszkoli.</p>
-                                    <p class="text-section">Liczne referencje potwierdzają wysoką jakość prezentowanych w naszym sklepie foteli gabinetowych, komód czy kontenerów. Co więcej, większość opinii utwierdza w przekonaniu, iż współpraca z Efekt Style była niezwykle korzystną inwestycją.</p>
-                                </header>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-5 offset-md-1 pr-lg-0" data-aos="fade-up" data-aos-delay="300">
-                                <div class="section-text-col offset-col-top">
-                                    <p class="small-block-heading">Jeżeli zastanawiają się Państwo nad zakupem mebli do biura w naszym sklepie internetowym zapraszamy do przeczytania referencji dotychczasowych klientów.</p>
-                                </div>
-                            </div>
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="400">
-                                <span class="arrow-link"><span class="icon icon-next"></span></span>
-                            </div>
+            <div class="toggleOwl">
+               <nav class="tab-nav" data-aos="fade-up" data-aos-delay="300">
+                  <ul class="nav tab-nav__item tabNavSlider" role="tablist">
+                     <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">Wszystkie</a></li>
+                     <li role="presentation"><a href="#tab2"  role="tab" data-toggle="tab">PRZEDSIĘBIORSTWA</a></li>
+                     <li role="presentation"><a href="#tab3"  role="tab" data-toggle="tab">SADY</a></li>
+                     <li role="presentation"><a href="#tab4"  role="tab" data-toggle="tab">URZĘDY</a></li>
+                  </ul>
+               </nav>
+               <!-- Tab panes -->
+               <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="tab1">
+                     <div class="section-slider-reference__content sliderCarousel owl-carousel sliderReference gallery" id="sliderCarousel">
+                        <div class="item cat1 all" data-aos="fade-up" data-aos-delay="250">
+                           <a href="img/reference/3.jpg" class="section-slider-reference__content__item"  title="Sąd Rejonowy w Inowrocławiu">
+                              <time>2017</time>
+                              <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
+                              <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
+                           </a>
                         </div>
-                    </div>
-                </section>
-                <!-- section seperator -->
-                <section class="section-default section-slider-reference">
-                    <div class="container">
-                        <header class="section-default-header" data-aos="fade-up" data-aos-delay="200">
-                            <h2 class="section-heading">Lista referencji</h2>
-                            <a href="ofirmie.html" class="text-link text-link-icon--right">Zobacz wszystkie <span class="icon icon-next"></span></a>
-                        </header>
-                        <nav class="tab-nav" data-aos="fade-up" data-aos-delay="300">
-                            <ul class="tab-nav__item tabNavSlider" id="tabNav">
-                                <li id="all" class="active">Wszystkie</li>
-                                <li id="cat1">PRZEDSIĘBIORSTWA</li>
-                                <li id="cat2">SADY</li>
-                                <li id="cat3">URZĘDY</li>
-                            </ul>
-                        </nav>
-                        <div class="section-slider-reference__content sliderCarousel owl-carousel sliderReference" id="sliderCarousel">
-                            <div class="item cat1 all" data-aos="fade-up" data-aos-delay="250">
-                                <a href="#" class="section-slider-reference__content__item">
-                                    <time>2017</time>
-                                    <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
-                                    <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
-                                </a>
-                            </div>
-                            <div class="item cat2 all" data-aos="fade-up" data-aos-delay="250">
-                                <a href="#" class="section-slider-reference__content__item">
-                                    <time>2017</time>
-                                    <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
-                                    <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
-                                </a>
-                            </div>
-                            <div class="item cat3 all" data-aos="fade-up" data-aos-delay="250">
-                                <a href="#" class="section-slider-reference__content__item">
-                                    <time>2017</time>
-                                    <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
-                                    <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
-                                </a>
-                            </div>
-                            <div class="item cat3 all" data-aos="fade-up" data-aos-delay="250">
-                                <a href="#" class="section-slider-reference__content__item">
-                                    <time>2017</time>
-                                    <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
-                                    <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
-                                </a>
-                            </div>
+                        <div class="item cat2 all" data-aos="fade-up" data-aos-delay="250">
+                           <a href="#" class="section-slider-reference__content__item">
+                              <time>2017</time>
+                              <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
+                              <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
+                           </a>
                         </div>
-                        <div id="projects-hidden" class="hide"></div>
-                    </div>
-                </section>
-                <!-- section seperator -->
-                <div class="container" data-aos="fade-up" data-aos-delay="200">
-                    <div class="row">
-                      <div class="col-12">
-                          <hr class="default-line">
-                      </div>
-                    </div>
-                </div>
-                <!-- section seperator -->
-                <aside class="section-default aside-offer" data-aos="fade-up" data-aos-delay="200">
-                    <div class="container">
-                        <div class="aside-offer__content">
-                            <h3 class="small-section-heading">Zamów EFEKTowne meble<br> do Twojego biura</h3>
-                            <a href="oferta.html" class="btn-main btn-main--icon-right">Przejdź do oferty<span class="icon icon-next"></span></a>
+                        <div class="item cat3 all" data-aos="fade-up" data-aos-delay="250">
+                           <a href="#" class="section-slider-reference__content__item">
+                              <time>2017</time>
+                              <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
+                              <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
+                           </a>
                         </div>
-                    </div>
-                </aside>
-                <!-- section seperator -->
-                <div class="container d-none-lg" data-aos="fade-up" data-aos-delay="200">
-                    <div class="row">
-                      <div class="col-12">
-                          <hr class="default-line">
-                      </div>
-                    </div>
-                </div>
-                <!-- section seperator -->
-            </main>
-            
-            <footer class="footer-main">
-                <div class="container">
+                        <div class="item cat3 all" data-aos="fade-up" data-aos-delay="250">
+                           <a href="#" class="section-slider-reference__content__item">
+                              <time>2017</time>
+                              <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
+                              <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="tab2">
+                     <div class="section-slider-reference__content sliderCarousel owl-carousel sliderReference gallery style2" id="sliderCarousel">
+                        <div class="item cat1 all" data-aos="fade-up" data-aos-delay="250">
+                           <a href="img/reference/3.jpg" class="section-slider-reference__content__item"  title="Sąd Rejonowy w Inowrocławiu">
+                              <time>2017</time>
+                              <h3 class="section-slider-reference__content__item__title">Sąd Rejonowy dla Wrocław-Krzyków we Wrocławiu</h3>
+                              <span class="text-link text-link-icon--right">Pokaż więcej <span class="icon icon-next"></span></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="projects-hidden" class="hide"></div>
+            </div>
+         </section>
+         <!-- section seperator -->
+         <div class="container" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+               <div class="col-12">
+                  <hr class="default-line">
+               </div>
+            </div>
+         </div>
+         <!-- section seperator -->
+         <aside class="section-default aside-offer" data-aos="fade-up" data-aos-delay="200">
+            <div class="container">
+               <div class="aside-offer__content">
+                  <h3 class="small-section-heading">Zamów EFEKTowne meble<br> do Twojego biura</h3>
+                  <a href="oferta.html" class="btn-main btn-main--icon-right">Przejdź do oferty<span class="icon icon-next"></span></a>
+               </div>
+            </div>
+         </aside>
+         <!-- section seperator -->
+         <div class="container d-none-lg" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+               <div class="col-12">
+                  <hr class="default-line">
+               </div>
+            </div>
+         </div>
+         <!-- section seperator -->
+      </main>
+      <footer class="footer-main">
+         <div class="container">
 	<nav class="breadcrumbs">
 		<ul class="breadcrumbs__list">
 			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#">Strona główna</a></li>
@@ -236,10 +260,8 @@
 		</div>
 	</div>
 </div>
-            </footer>
- 
-
-            <script src="js/scripts.min.js"></script>
+      </footer>
+          <script src="js/scripts.min.js"></script>
     <script src="js/plugins.min.js"></script>
 
     <script>
@@ -252,6 +274,5 @@
              
         });
     </script>
-
-    </body>
+   </body>
 </html>

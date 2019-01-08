@@ -16,7 +16,41 @@
     .owl-stage-outer {
         overflow: visible !important;
     }
-
+    .item{
+         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+           // margin-right: 15px;
+         }
+    }
+&__item:after{
+  content: "";
+    background: #fff;
+    position: absolute;
+    left: -9px;
+    top: -2px;
+    bottom: -2px;
+    width: 20px;
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-7deg);
+     @media (max-width: $md) {
+        left: -5px;
+  width: 10px; 
+     }
+}
+&__item:before{
+  content: "";
+    background: #fff;
+    position: absolute;
+    right:  -9px;
+    top: -2px;
+    bottom: -2px;
+    width: 20px;
+    -ms-transform: rotate(20deg);
+    transform: rotate(7deg);
+     @media (max-width: $md) {
+    right:  -5px;
+    width: 10px;
+     }
+}
     &__item {
         background: #EBEBEB;
         height: 52px;
@@ -24,8 +58,8 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        -webkit-clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
-        clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
+       // -webkit-clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
+      //  clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
 
         @media (min-width: 620px) {
             height: 80px;
@@ -61,6 +95,12 @@
             img {
                 max-height: 100%;
                 width: auto !important;
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+ 
+     width: 100% !important; 
+   
+ }
             }
         }
     }
@@ -97,9 +137,40 @@
         .owl-stage {
             .owl-item:nth-child(2n) {
                 .item {
+                    .section-slider-logo__item:after{
+ content: "";
+    background: #fff;
+    position: absolute;
+    left: -9px;
+    top: -2px;
+    bottom: -2px;
+    width: 17px;
+    -ms-transform: rotate(-20deg);
+    transform: rotate(7deg);
+    @media (max-width: $md) {
+    left:  -4px;
+    width: 7px;
+     }
+}
+           .section-slider-logo__item:before{
+ content: "";
+    background: #fff;
+    position: absolute;
+    right:  -8px;
+    top: -2px;
+    bottom: -2px;
+    width: 17px;
+    -ms-transform: rotate(20deg);
+    transform: rotate(-7deg);
+     @media (max-width: $md) {
+    right:  -5px;
+    width: 10px;
+     }
+
+}
                     .section-slider-logo__item {
-                        -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
-                        clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+                   //     -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+                     //   clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
                     }
 
                     /* 

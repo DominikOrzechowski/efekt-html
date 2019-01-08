@@ -36,6 +36,22 @@
         margin-bottom: 23px;
      }
             }
+            &__title::before{
+                  content: "\67";
+       font-family: "efektmeble" !important;
+        font-size: 0.8rem;
+        color: #393C3E;
+        position:absolute;
+        right: 15px;transform: rotate(90deg);
+        top:10px;
+        text-transform: lowercase;
+        transition:150ms all ease-in-out;
+        display: none;
+
+        @media (max-width: $lg) {
+            display: block;
+        }
+            }
             &__title.active {
             	border-bottom: 1px solid transparent;
             }

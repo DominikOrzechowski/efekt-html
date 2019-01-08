@@ -8,7 +8,7 @@
     var iconURLPrefix = '';
     
     var icons = [
-      iconURLPrefix + 'img/logo/pin.svg',
+      iconURLPrefix + 'img/pin.svg',
     ]
     var iconsLength = icons.length;
 

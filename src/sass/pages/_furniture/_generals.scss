@@ -132,6 +132,7 @@
         }
         .owl-nav{
         	margin-top: -30px;
+             @media (min-width: $xle) {margin-left: 57px;left:0;}
         }
 
         .owl-dots {

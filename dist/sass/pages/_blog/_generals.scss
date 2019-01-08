@@ -40,11 +40,21 @@
             margin: 30px 0px 0;
         }
 
+        @media (min-width: $lg) {
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          //      margin: 0 -15px;
+            }
+        }
+
         .col-12 {
             padding: 0;
 
             @media (min-width: $lg) {
                 padding: 0px;
+
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                  //  padding: 0px 15px;
+                }
             }
         }
 
@@ -52,9 +62,29 @@
             .section-slider-blog__item {
                 &__img {
                     @media (min-width: $md) {
-                        -webkit-clip-path: polygon(0 100%, 92% 100%, 100% 0, 0 0);
-                        clip-path: polygon(0 100%, 92% 100%, 100% 0, 0 0);
+                        //      -webkit-clip-path: polygon(0 100%, 92% 100%, 100% 0, 0 0);
+                        //   clip-path: polygon(0 100%, 92% 100%, 100% 0, 0 0);
                     }
+                }
+
+                &__img:after {
+                    content: "";
+                    background: #fff;
+                    position: absolute;
+                    right: -8px;
+                    top: -9px;
+                    bottom: -2px;
+                    width: 28px;
+                    -ms-transform: rotate(-20deg);
+                    transform: skew(-4deg);
+                    display:none;
+                     @media (min-width: $md) {
+                        display:block;
+                     }
+ @media (min-width: $md) and (max-width: $xle){
+                        width: 17px;
+                        right: 0px;
+                     }
                 }
             }
         }
@@ -63,9 +93,48 @@
             .section-slider-blog__item {
                 &__img {
                     @media (min-width: $md) {
-                        -webkit-clip-path: polygon(0 100%, 100% 100%, 92% 0, 8% 0);
-                        clip-path: polygon(0 100%, 100% 100%, 92% 0, 8% 0);
+                        // -webkit-clip-path: polygon(0 100%, 100% 100%, 92% 0, 8% 0);
+                        //  clip-path: polygon(0 100%, 100% 100%, 92% 0, 8% 0);
                     }
+                }
+
+                &__img:after {
+                    content: "";
+                    background: #fff;
+                    position: absolute;
+                    left: -21px;
+                    top: -9px;
+                    bottom: -2px;
+                    width: 29px;
+                    -ms-transform: rotate(-20deg);
+                    transform: skew(-4deg);
+                    display:none;
+                     @media (min-width: $md) {
+                        display:block;
+                     }
+ @media (min-width: $md) and (max-width: $xle){
+                        width: 17px;
+                        left:-15px;
+                     }
+                }
+
+                &__img:before {
+                    content: "";
+                    background: #fff;
+                    position: absolute;
+                    right: -21px;
+                    top: -9px;
+                    bottom: -2px;
+                    width: 29px;
+                    -ms-transform: rotate(-20deg);
+                    transform: skew(4deg);
+                    display:none;
+                     @media (min-width: $md) {
+                        display:block;
+                     }
+ @media (min-width: $md) and (max-width: $xle){
+                        width: 17px;
+                     }
                 }
             }
         }
@@ -74,15 +143,37 @@
             .section-slider-blog__item {
                 &__img {
                     @media (min-width: $md) {
-                        -webkit-clip-path: polygon(8% 100%, 100% 100%, 100% 0, 0 0);
-                        clip-path: polygon(8% 100%, 100% 100%, 100% 0, 0 0);
+                        //  -webkit-clip-path: polygon(8% 100%, 100% 100%, 100% 0, 0 0);
+                        //clip-path: polygon(8% 100%, 100% 100%, 100% 0, 0 0);
                     }
                 }
-                &__content{
-                                  @media (min-width: $md) {
-padding-left: 7%;
-//padding-right: 7%;
-}
+
+                &__img:before {
+                    content: "";
+                    background: #fff;
+                    position: absolute;
+                    left: -8px;
+                    top: -9px;
+                    bottom: -2px;
+                    width: 29px;
+                    -ms-transform: rotate(-20deg);
+                    transform: skew(4deg);
+                    display:none;
+                     @media (min-width: $md) {
+                        display:block;
+                     }
+ @media (min-width: $md) and (max-width: $xle){
+                        width: 17px;
+                        left:0;
+                     }
+                }
+
+                &__content {
+                    @media (min-width: $md) {
+                        padding-left: 7%;
+
+                        //padding-right: 7%;
+                    }
                 }
             }
         }
@@ -113,10 +204,12 @@ padding-left: 7%;
             @media (min-width: $lg) {
                 height: 215px;
             }
-             @media (min-width: $xle) {
+
+            @media (min-width: $xle) {
                 height: 270px;
             }
-  @media (min-width: $xle-more) {
+
+            @media (min-width: $xle-more) {
                 height: 280px;
             }
 
@@ -130,10 +223,10 @@ padding-left: 7%;
             @media (max-width: $sm) {
                 padding: 0 15px;
             }
-            @media (min-width: $md) {
-            padding-right: 7%;
-        }
 
+            @media (min-width: $md) {
+                padding-right: 7%;
+            }
 
             time {
                 display: block;
@@ -162,10 +255,12 @@ padding-left: 7%;
                 line-height: 2.1rem;
                 font-family: $font-primary;
                 font-weight: 400;
-   @media (min-width: $md) {
-    height: 64px;
-    overflow: hidden;
-   }
+
+                @media (min-width: $md) {
+                    height: 64px;
+                    overflow: hidden;
+                }
+
                 @media (min-width: $lg) {
                     font-size: 1.7rem;
                     line-height: 2.1rem;

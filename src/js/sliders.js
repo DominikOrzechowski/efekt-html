@@ -332,7 +332,7 @@ $(".sliderJS-inspiration").owlCarousel({
   });
 
 
-function showProjectsbyCat( cat ){
+/*function showProjectsbyCat( cat ){
   if ( cat == 'all'){
     $('#projects-hidden .item').each(function(){
        var owl   = $(".owl-carousel");
@@ -364,8 +364,8 @@ function showProjectsbyCat( cat ){
 function refreshItem(){
 
  $owl.trigger('refresh.owl.carousel');
-}
-$(window).load(function(){
+}*/
+/*$(window).load(function(){
   
     //Click event for filters
     $('#tabNav li').click(function(e){
@@ -377,7 +377,9 @@ $(window).load(function(){
         showProjectsbyCat( cat );
         //alert('filtering'+ cat);
         var $owl = $("#sliderCarouselRealization");
+         var $owl2 = $("#sliderCarousel");
        $owl.trigger('refresh.owl.carousel');
+       $owl2.trigger('refresh.owl.carousel');
     });
   
    //Initialize owl carousel
@@ -461,4 +463,116 @@ $(window).load(function(){
 }
     }
   );
+});*/
+
+jQuery.fn.extend({
+  toggleOwl: function(selector, options, destroy){
+    return this.each(function(){
+      $(this).find(selector).filter(function(){
+        return $(this).parent().is(':visible');
+      }).owlCarousel(options);
+      
+      $(this).on('shown.bs.tab', function(event){
+        var target = $(event.target.getAttribute('href')).find(selector);
+        if(!target.data('owlCarousel')){
+          var owl = target.owlCarousel(options).data("owlCarousel");
+        }
+      });
+      if(destroy === true){
+        $(this).on('hide.bs.tab', function(event){
+          var target = $(event.target.getAttribute('href')).find(selector);
+          if(target.data('owl.carousel')){
+            target.data('owl.carousel').destroy();
+          }
+        });        
+      }
+    });
+  }
 });
+
+jQuery(function($) { 
+  $('.toggleOwl').toggleOwl(' #tab1 .owl-carousel', {
+     items:1,
+    singleItem:true,
+    stagePadding:0,
+    smartSpeed:450,
+    //center:true,
+    loop:false,
+    margin:0,
+    
+   
+  nav:false,
+             navText: [
+           "<span class='icon icon-back'></span>",
+          "<span class='icon icon-next'></span>"
+          ],
+   
+
+    autoplay:false,
+       
+       dots:true,
+       pagination:true,
+          responsiveClass:true,
+          responsive : {
+    // breakpoint from 0 up
+ 
+    
+     450 : {
+       items:2,
+    },
+      520 : {
+       items:2,
+    },
+      767 : {
+       items:3,
+    },
+     1300 : {
+       nav:true,
+       items:3,
+    },
+}
+  });
+
+  $('.toggleOwl').toggleOwl('.owl-carousel.style2', {
+  items:1,
+    singleItem:true,
+    stagePadding:0,
+    smartSpeed:450,
+    //center:true,
+    loop:false,
+    margin:0,
+    
+   
+  nav:false,
+             navText: [
+           "<span class='icon icon-back'></span>",
+          "<span class='icon icon-next'></span>"
+          ],
+   
+
+    autoplay:false,
+       
+       dots:true,
+       pagination:true,
+          responsiveClass:true,
+          responsive : {
+    // breakpoint from 0 up
+ 
+    
+     450 : {
+       items:2,
+    },
+      520 : {
+       items:2,
+    },
+      767 : {
+       items:3,
+    },
+     1300 : {
+       nav:true,
+       items:3,
+    },
+}
+  });
+});
+
